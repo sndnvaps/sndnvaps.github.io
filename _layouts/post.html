@@ -10,18 +10,28 @@
   <title>Matthew - 調和的靈感</title>
 
   <style type="text/css">
-  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px; color: #2D2E25;}
+  body { font-family: 'PT Serif'; background-color:#E0DFC0; font-size: 16px; color: #2D2E25;}
   body a { color: #AA6D00; }
   body a:hover { color:#AA914B; }
-  .container { width: 800px; }
-
+  .post {
+    background-color:#F2F5DE;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    padding: 20px 50px;
+    margin: 0 auto;
+    border: 1px solid #C3CCD0;
+  }
   .post-body p { line-height: 1.8em; }
-  .post-title { margin: 0; }
+  .post-title {
+    padding-top:40px;
+    padding-bottom:10px;
+    border-bottom: solid 1px #aaa;
+    margin-bottom: 30px;
+  }
 
   .right-bar { background-color: #C4D7A4;}
   .right-bar a { display: block; width: 40px; height: 25px; padding: 10px;}
   .right-bar a:hover { background-color: #ABC8A4;}
-  .post-title { margin: 0; }
   .post-body img {
     border: solid 2px #eee;
     padding: 0;
@@ -48,8 +58,9 @@
 
   <div class="container">
     <br />
+    <div class="post">
     <!-- Header ======================= -->
-    <div id="header-banner post-title" style="padding-top: 40px; padding-bottom:10px;">
+    <div class="post-title" >
 
       <div style="">
         {{ page.date | date_to_long_string }}
@@ -65,12 +76,15 @@
         {{ content }}
     </div>
 
+
     <h4 style="border-bottom: solid 1px #bbb; margin-top: 5em;">相關文章</h4>
     <ul>
     {% for pp in site.related_posts limit:3 offset:1 %}
       <li> <a href="{{ site.baseurl }}{{ pp.url }}"> {{ pp.title }} </a> </li>
     {% endfor %}
     </ul>
+
+    </div>
 
     <br/><br/>
     {% include disqus.html %}
@@ -88,12 +102,8 @@
   <br/><br/>
   <div style="width: 100%;">
     <br/>
-    <div class="container">
-    <div class="row">
-      <div class="span8" style="color:#aaa;">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> Matthew以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW" style="color:#aaa;">創用CC 姓名標示-非商業性-相同方式分享 3.0 Unported 授權條款</a>釋出。
-      </div>
-    </div>
+    <div class="container" style="text-align:center;">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> 調和的靈感-Matt以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW" style="color:#555;">創用CC 姓名標示-非商業性-相同方式分享 3.0 Unported 授權條款</a>釋出。
     </div>
     <br/>
   </div>
