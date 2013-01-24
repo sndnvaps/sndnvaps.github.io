@@ -16,8 +16,8 @@
   .post {
     background-color:#F2F5DE;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
-    width: 900px;
-    padding: 20px 50px;
+    width: 780px;
+    padding: 20px 80px 60px 80px;
     margin: 0 auto;
     border: 1px solid #C3CCD0;
   }
@@ -29,7 +29,7 @@
     margin-bottom: 30px;
   }
 
-  .right-bar { background-color: #C4D7A4;}
+  .right-bar { /* background-color: #C4D7A4; */ }
   .right-bar a { display: block; width: 40px; height: 25px; padding: 10px;}
   .right-bar a:hover { background-color: #ABC8A4;}
   .post-body img {
@@ -57,7 +57,11 @@
 <body>
 
   <div class="container">
-    <br />
+
+    <div style="font-family:'微軟正黑體','Microsoft YaHei'; padding: 10px;">
+      <a href="{{ site.url }}">{{site.name}}</a>
+    </div>
+
     <div class="post">
     <!-- Header ======================= -->
     <div class="post-title" >
@@ -97,6 +101,7 @@
     <a href="http://github.com/chchwy"><img src="{{site.url}}img/icon/glyphicons_401_github.png" /></a>
     <a href="{{ site.url }}archieve.html" ><img src="{{site.url}}img/icon/glyphicons_114_list.png"/></a>
   </div>
+
 
   <!-- Begin Footer -->
   <br/><br/>

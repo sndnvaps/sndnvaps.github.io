@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "建立Github Pages & Jekyll- 給Windows使用者 (上)"
+title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
 categories: [Tech]
 tags: [Jekyll]
 published: true
@@ -16,18 +16,7 @@ published: true
 
 ### 第一步，申請Github帳號 ###
 
-在Github上面開博客，一個Github帳號是鐵定要有的，不廢話，申請一個吧:
-
-<a href="http://github.com">
-<img src="https://raw.github.com/github/media/master/logos/github_logo_social_coding_outlined.png" />
-</a>
-<br/>
-
-[Github](http://github.com/) 是現在最熱門的程式員交流平台，
-很多重要的開源項目如[jQuery](https://github.com/jquery/)、
-[Ruby on Rails](https://github.com/rails/rails)的源碼都託管在Github上，
-再透過git版本控制系統協同來自全世界的開發者。
-想要進一步了解Github可以看看這一篇[介紹文章](http://www.yangzhiping.com/tech/github.html)
+首先一個Github帳號是鐵定要有的，[Github](http://github.com/) 是現在最熱門的程式員交流平台，不廢話，申請一個吧。
 
 
 ### 第二步，安裝Github for Windows的客戶端程式 ####
