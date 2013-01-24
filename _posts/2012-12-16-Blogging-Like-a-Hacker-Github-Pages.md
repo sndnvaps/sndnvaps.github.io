@@ -38,9 +38,4 @@ Github本身作為全球性的代碼託管服務商，不需要擔心服務品�
 只是裡面有個小錯誤，就是個人博客不需要特別建立gh-pages分支，直接放在主分支裡就可以了。
 
 搞Jekyll還是要有基本的網頁知識，最好有自己撰寫HTML/CSS的經驗。
-有興趣的人，可以參考我的經驗: [從零開始建立Github Blog - 給Windows使用者](http://chchwy.github.com/2012/12/Github-Pages-for-Windows-Lasy-User-1.html)
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+有興趣的人，可以參考我的經驗: [建立Github Blog - 給Windows使用者](2012/12/Github-Pages-for-Windows-Lasy-User-1.html)
