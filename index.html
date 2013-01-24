@@ -1,0 +1,47 @@
+---
+layout: home
+title: Home
+---
+<!-- Post body ======================= -->
+
+{% for post in site.posts limit: 1 %}
+
+  <section class="post">
+    <div>
+      <h3 style="margin-bottom:1px; font-size: 20px; font-family:'微軟正黑體','Microsoft YaHei';">
+        <img src="img/icon/glyphicons_072_bookmark.png" />
+        &nbsp;&nbsp;&nbsp;
+        <a href="{{ post.url }}" >
+          {{ post.title }}
+        </a>
+
+        <div class="pull-right" style="font-size: 11px; color: #40332A;">
+        - {{ post.date | date_to_long_string }}
+        </div>
+      </h3>
+    </div>
+
+    <div style="color:#555;">
+      {{ post.content | strip_html | truncatewords: 8 }}
+      <br/>
+      <a style="color:#256;" href="{{ post.url }}">(read more..)</a>
+
+    </div>
+  </section>
+
+  <hr style="border: dashed 1px #ddd;" />
+
+{% endfor %}
+
+<h4>最近文章:</h4>
+<ul>
+{% for post in site.posts limit:5 offset:1 %}
+  <li style="border-bottom: dashed 1px #ccc; line-height: 1.6em;" >
+    <span style="color: #AA9393;">
+      {{ post.date | date:"%Y-%m-%d" }}
+    </span>
+    &nbsp;-&nbsp;
+    <a href="{{ post.url }}" style="font-family:'微軟正黑體','Microsoft YaHei';">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>

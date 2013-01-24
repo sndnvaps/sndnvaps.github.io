@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' >
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/hemisu-dark.css" />
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}feed.xml" title="Matthew - 調和的靈感 RSS 2.0 feed" >
+  <title>Matthew - 調和的靈感</title>
+
+  <style type="text/css">
+  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px; color: #2D2E25;}
+  body a { color: #AA6D00; }
+  body a:hover { color:#AA914B; }
+  .container { width: 612px; }
+
+  .post-body p { line-height: 1.8em; }
+  .post-title { margin: 0; }
+
+  .right-bar { background-color: #C4D7A4;}
+  .right-bar a { display: block; width: 40px; height: 25px; padding: 10px;}
+  .right-bar a:hover { background-color: #ABC8A4;}
+  .post-title { margin: 0; }
+  .post-body img {
+    border: solid 2px #eee;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  .post-body p { margin-bottom: 1.5em; }
+  .post-body blockquote p { margin: 0; }
+  .post-body h1, h2, h3, h4 {
+    margin-top: 2em;
+    font-weight: 500;
+    font-family: 'PT Serif','微軟正黑體','Microsoft Yahei','Hiragino Sans GB',sans-serif;
+    border-bottom: 1px dotted #B5B5B5;
+  }
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <br />
+    <!-- Header ======================= -->
+    <div id="header-banner post-title" style="padding-top: 40px; padding-bottom:10px;">
+
+      <div style="">
+        {{ page.date | date_to_long_string }}
+        <a href="{{ site.url }}">
+          <h1 style="margin:9px 0; font-size: 26px; font-family:'微軟正黑體','Microsoft YaHei'; font-weight:bold; line-height:1.3em;">
+            {{ page.title }}
+          </h1>
+        </a>
+      </div>
+    </div>
+
+    <div class="post-body">
+        {{ content }}
+    </div>
+
+    <h4 style="border-bottom: solid 1px #bbb; margin-top: 5em;">相關文章</h4>
+    <ul>
+    {% for pp in site.related_posts limit:3 offset:1 %}
+      <li> <a href="{{ site.baseurl }}{{ pp.url }}"> {{ pp.title }} </a> </li>
+    {% endfor %}
+    </ul>
+
+    <br/><br/>
+    {% include disqus.html %}
+  </div>
+
+  <div class="right-bar" style="position:fixed; height:100%; width:60px; top:0; right:0; text-align:center;">
+    <a href="{{ site.url }}"><img src="{{site.url}}img/icon/glyphicons_020_home.png" /></a>
+    <a href="feed.xml"><img src="{{site.url}}img/icon/glyphicons_417_rss.png" /></a>
+    <a href="http://twitter.com/chchwy"><img src="{{site.url}}img/icon/glyphicons_411_twitter.png" /></a>
+    <a href="http://github.com/chchwy"><img src="{{site.url}}img/icon/glyphicons_401_github.png" /></a>
+    <a href="{{ site.url }}archieve.html" ><img src="{{site.url}}img/icon/glyphicons_114_list.png"/></a>
+  </div>
+
+  <!-- Begin Footer -->
+  <br/><br/>
+  <div style="width: 100%;">
+    <br/>
+    <div class="container">
+    <div class="row">
+      <div class="span8" style="color:#aaa;">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> Matthew以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW" style="color:#aaa;">創用CC 姓名標示-非商業性-相同方式分享 3.0 Unported 授權條款</a>釋出。
+      </div>
+    </div>
+    </div>
+    <br/>
+  </div>
+
+  {% include analytics.html %}
+
+
+  <script src="{{ site.url }}js/prettify.js"> </script>
+  <script src="http://code.jquery.com/jquery-latest.js"> </script>
+<script type="text/javascript">
+$(function() {
+    $("a.embed").each(function() {
+        var $link = $(this);
+
+        $.ajax({
+            url: $link.attr('href'),
+            dataType: 'jsonp',
+            error: function(xhr, status, error) {
+                alert(error);
+            },
+            success: function(response) {
+
+                var code = $('<pre>')
+                    .addClass('prettyprint')
+                    .text(response.data);
+
+                $link.replaceWith(code);
+                prettyPrint();
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

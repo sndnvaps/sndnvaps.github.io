@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' >
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/hemisu-dark.css" />
+  <link rel="alternate "type="application/rss+xml" href="{{ site.url }}feed.xml" title="Matthew - 調和的靈感 RSS 2.0 feed" >
+  <title>{{ site.name }}</title>
+
+  <style type="text/css">
+  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px;}
+  body a { color: #415946; }
+  body a:hover { color:#40332A; }
+  .container { width: 612px; }
+  .post-body { line-height: 1.8em; }
+  .post-title { margin: 0; }
+
+  .right-bar { background-color: #C4D7A4;}
+  .right-bar a { display: block; width: 40px; height: 25px; padding: 10px;}
+  .right-bar a:hover { background-color: #ABC8A4;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <br />
+    <!-- Header ======================= -->
+    <div id="header-banner" class="row" style="margin-top: 40px;">
+
+      <div class="span8">
+        <a href="{{ site.url }}">
+          <h1 style="margin:9px 0; font-size: 26px; font-family:'微軟正黑體','Microsoft YaHei'; line-height:1em;">
+            {{ site.name }}
+          </h1>
+        </a>
+        {{ site.description }}
+      </div>
+    </div>
+
+    <br/>
+    <div style="border-top: solid 1px #DBDFD6;" ></div>
+    <br/>
+
+
+    <div>
+        {{ content }}
+    </div>
+
+  </div>
+
+  <div class="right-bar" style="position:fixed; height:100%; width:60px; top:0; right:0; text-align:center;">
+    <a href="{{ site.url }}"><img src="img/icon/glyphicons_020_home.png" /></a>
+    <a href="feed.xml"><img src="img/icon/glyphicons_417_rss.png" /></a>
+    <a href="http://twitter.com/chchwy"><img src="img/icon/glyphicons_411_twitter.png" /></a>
+    <a href="http://github.com/chchwy"><img src="img/icon/glyphicons_401_github.png" /></a>
+    <a href="{{ site.url }}archieve.html" ><img src="img/icon/glyphicons_114_list.png"/></a>
+  </div>
+
+  <!-- Begin Footer -->
+  <br/><br/>
+  <div style="width: 100%;">
+    <br/>
+    <div class="container">
+    <div class="row">
+      <div class="span8" style="color:#aaa;">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> Matthew以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW" style="color:#aaa;">創用CC 姓名標示-非商業性-相同方式分享 3.0 Unported 授權條款</a>釋出。
+      </div>
+    </div>
+    </div>
+    <br/>
+  </div>
+
+  {% include analytics.html %}
+
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/prettify.js"></script>
+  <script type="text/javascript">
+  // 原先的Gist Theme太醜了，而且不支援黑底
+  $(function(){
+    prettyPrint();
+    //$(".gist-syntax").removeClass("gist-syntax");
+    //$(".gist-file").removeClass("gist-file");
+    //$(".gist").addClass("my-gist");
+    //$(".gist").css("color", "#eee");
+  });
+  </script>
+</body>
+</html>

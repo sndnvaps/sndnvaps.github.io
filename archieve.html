@@ -1,0 +1,21 @@
+---
+layout: home
+title: Archives
+---
+<div class="archives">
+    <h4>All posts is here.
+        ({{ site.posts | size }} posts.)</span></h4>
+
+    <ul>
+        {% for post in site.posts %}
+        <li style="border-bottom: dashed 1px #ccc; line-height: 1.4em;" >
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a> -
+            <span style="color: #aaa;">
+                {{ post.date | date_to_string }}
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
