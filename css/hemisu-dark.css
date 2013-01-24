@@ -100,8 +100,8 @@ pre.prettyprint {
   font-family: Menlo, Consolas, Monaco, monospace;
   font-size: 14px;
   line-height: 1.5;
-  border: 0px solid #444;
-  padding: 10px;
+  border-left: 8px solid #555;
+  padding: 15px 10px;
 }
 
 /* Specify class=linenums on a pre to get line numbering */

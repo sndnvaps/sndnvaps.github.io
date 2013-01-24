@@ -84,7 +84,7 @@
     <h4 style="border-bottom: solid 1px #bbb; margin-top: 5em;">相關文章</h4>
     <ul>
     {% for pp in site.related_posts limit:3 offset:1 %}
-      <li> <a href="{{ site.baseurl }}{{ pp.url }}"> {{ pp.title }} </a> </li>
+      <li> <a href="{{ site.url }}{{ pp.url }}"> {{ pp.title }} </a> </li>
     {% endfor %}
     </ul>
 
