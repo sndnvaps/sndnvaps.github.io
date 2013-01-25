@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Objective-C學習筆記(1) 字串兩三事"
-categories: [ Tech ]
+categories: [ 技術筆記 ]
 tags: [ Objective-C ]
 published: true
 ---

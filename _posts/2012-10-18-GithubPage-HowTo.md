@@ -1,18 +1,16 @@
 ---
 layout: post
-title: 使用Github Page以及Jekyll來架設Blog
-categories: [Blog]
+title: 在Windows本機安裝Jekyll攻略
+categories: [技術筆記]
 tags: [Jekyll]
 published: false
 ---
 
-### 於是有了 Github
+聽說現在世界領頭搞Web技術的那一群人，不是用Linux就是用Mac OS，
+就連XDite之前寫的Ruby on Rails的教學書裡也劈頭就說，要學好Rails的第一步就是準備好一台Mac電腦，
+可見Windows在這些新技術領域裡的確就是個次等公民，安裝個Jekyll也要折騰個半天。
 
-### 一些錯誤排除
 
-我在網路上搜尋了很多教學，大部分都有缺漏或者寫的雜亂無章，最後總算找到阮一峰寫的條理清晰的教學 [github Pages和Jekyll入门][1] 照著步驟做了，搞定!
-
-可是阮一峰的那篇教學只有最基本的Jekyll架構，想要
 
 ### 安裝Jekyll
 1. 安裝Ruby 1.9.3
