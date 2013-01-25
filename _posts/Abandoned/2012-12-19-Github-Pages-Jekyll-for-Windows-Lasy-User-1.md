@@ -3,16 +3,17 @@ layout: post
 title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
 categories: [Tech]
 tags: [Jekyll]
-published: true
+published: false
 ---
 
-本篇將會說明怎麼樣從零開始建立一個 Github Pages Blog，保證親身經驗，夠懶人，不需要操作命令列。
-順帶一提，對象是 Windows 平台的使用者。
+本篇是我自己從零開始建立一個 Github Pages Blog的親身經驗，保證夠懶人，幾乎不需要操作命令列。
+順帶一提，我自己用的是Windows，所以對象是 Windows 平台的使用者。
 
 我之所以選擇Github ＆ Jekyll作為個人博客的原因 [可以參考這篇文章](http://chchwy.github.com/2012/12/Blogging-Like-a-Hacker-Github-Pages.html)。
 
-要完成本篇教學需要具備的能力只有一個，就是用文字編輯器手動修改 HTML/CSS 的能力，不需要很厲害，但是基本了解是必須的。
-不太清楚什麼是 git 也沒關係，因為沒有複雜的操作，可以慢慢來。
+要走完本篇教學需要具備的能力只有一個，就是用文字編輯器手動修改 HTML/CSS 的能力，
+不需要很厲害，但是基本了解是必須的。
+不太會操作 git 也沒關係，因為沒有複雜的操作，可以慢慢來。
 
 ### 第一步，申請Github帳號 ###
 
@@ -21,24 +22,26 @@ published: true
 
 ### 第二步，安裝Github for Windows的客戶端程式 ####
 
-Github很貼心的為不擅長命令列操作的Windows使用者開發了這個工具「Github for Windows」，極大的降低了在Windows平台上使用git的門檻。
+Github很貼心的為不擅長命令列操作的Windows使用者開發了這個工具「Github for Windows」，很大程度的降低了在Windows平台上使用git的門檻。
+像我自己這種一招半式闖江湖，只會用一些簡單git命令的人，能有這個工具幫助真是再好不過了。
 
 [Github for Windows下載頁面](http://windows.github.com/)，馬上安裝吧。
 
 
 ### 第三步，創建Github Pages版本庫 ####
 
-第一次啟動Github for Windows程式，會要求你輸入Github的帳號與密碼。接著就可以創建Git版本庫了，請按下視窗中央正上方的『+add』進入創建頁面:
+第一次啟動Github for Windows程式，會要求你輸入Github的帳號與密碼。
+接著就可以創建Git版本庫了，請按下視窗中央正上方的『+add』進入創建頁面:
 
 ![Create Reponsitory]({{site.url}}img/001-create-repo.png)
 
-在創建版本庫的頁面中，最重要的是版本庫必須取名為
+在創建版本庫的頁面中，**最重要的是版本庫必須取名為**
 
 > 你的GITHUB帳號.github.com
 
 比方說你的Github帳號叫charlie，那麼版本庫就一定要叫**charlie.github.com**，
-這個特別的命名指明了這個版本庫不是一般的程式專案，而是要拿來當作個人博客的用途，
-版本庫名稱同時也是未來你的博客的訪問網址。
+這個特別的命名規則說明了這個版本庫不是一般的程式專案，而是要拿來當作個人博客的用途，
+而版本庫名稱同時也是未來你的博客的訪問網址。
 Push to github選項記得要勾。按下Create按鈕，版本庫就算創建完成了。
 
 
@@ -52,9 +55,9 @@ Github for Windows視窗中間列出了你目前的版本庫清單，點選小�
 
 ![Open in Explorer]({{ site.url }}img/002-open-explorer.png)
 
-你沒看錯，所謂的版本庫也就是一個普通的目錄，你可以往目錄裡面塞任何東西，不過通常塞的是程式專案。
+所謂的版本庫也就是一個普通的目錄，你可以往目錄裡面塞任何東西，通常塞的是程式專案。
 
-現在萬事具備，只欠東風。什麼都有了，就缺內容。
+現在版本庫基本上已經準備好了，萬事具備，只欠東風。什麼都有了，就缺內容。
 往目錄裡添加一個index.html作為網站首頁，檔案內容如下:
 
 {% highlight html %}
