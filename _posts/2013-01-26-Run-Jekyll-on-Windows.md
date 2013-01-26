@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Windows本機安裝Jekyll攻略
+title: Windows上運行Jekyll的方法
 categories: [技術筆記]
 tags: [Jekyll]
 published: true
