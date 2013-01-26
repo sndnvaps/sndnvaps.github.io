@@ -2,7 +2,7 @@
 layout: post
 title: UVa 102 Ecological Bin Packing
 tags: [UVa Online Judge]
-categories: [Tech]
+categories: [程式解題]
 published: true
 ---
 
