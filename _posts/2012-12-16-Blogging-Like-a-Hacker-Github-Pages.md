@@ -1,14 +1,14 @@
 ---
 layout: post
 title: 博客當如駭客 - Github Pages & Jekyll
-categories: [Blog]
+categories: [技術筆記]
 tags: [Jekyll]
 published: true
 ---
 
 ## 為什麼要用 Github Pages?
 
-在遇見Github Page之前我一直都在 Blogger上寫博客 [http://chchwy.blogspot.tw](http://chchwy.blogspot.tw/)，斷斷續續的寫了四年左右，雖然有些小缺點像是貼碼的時候老是跟我抱怨`<iostream>`不是合法的HTML標籤，但還整體算滿意Blogger的服務。畢竟放眼望去很少有Blogger更好平台了。
+在遇見Github Page之前我一直都在 Blogger上寫博客 [http://chchwy.blogspot.tw](http://chchwy.blogspot.tw/)，斷斷續續的寫了四年左右，雖然有些小缺點像是貼碼的時候老是跟我抱怨`<iostream>`不是合法的HTML標籤，但還整體算滿意Blogger的服務。畢竟放眼望去很難有比Blogger更好平台了。
 但是你知道的，身為一個程式設計師，總想要對自己的Blog有更多、更多的控制權。
 我曾經試著自己架設伺服器，不過養機器實在太麻煩，後來就不了了之。
 
@@ -19,7 +19,7 @@ published: true
 首先，Github Pages 給予我完全控制頁面的權力，而且省卻了管理主機的麻煩。
 Github本身作為全球性的代碼託管服務商，不需要擔心服務品質。
 
-不同於其他的博客系統，後端總要有一套PHP+MySQL之類的運行環境，Github Pages後端採用了一個叫作[Jekyll](https://github.com/mojombo/jekyll)的靜態網站產生器。Jekyll一開始就將整個網站編譯成靜態HTML頁面，所以對於網路空間的要求極低，不用資料庫，也不用後端語言。對博客這類好幾天才會更新一篇的網站，靜態編譯再適合不過了。
+不同於其他的博客系統，後端總要有一套PHP+MySQL之類的運行環境即時運算頁面，Github Pages後端採用了一個叫作[Jekyll](https://github.com/mojombo/jekyll)的靜態網站產生器。Jekyll一開始就將整個網站編譯成靜態HTML頁面，所以不用資料庫，也不用後端語言，對於網路空間的要求極低。博客這類好幾天才會更新一篇的網站，靜態編譯再適合不過了。
 
 但是靜態網站的缺點就是訪客沒辦法回應文章，必須倚賴第三方服務，好在[Disqus](http://disqus.com) 和 [Facebook](http://developers.facebook.com/docs/reference/plugins/comments/)
 都有提供這類網站評論的服務，申請一個很容易，我現在就是用Disqus。
