@@ -40,9 +40,8 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
   }
   .post-body p {
-    line-height: 1.8em;
-    margin-bottom: 0.8em;
-    margin-top: 0.8em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
   }
   .post-body li { line-height: 1.8em; }
   ul { list-style-type: circle; }
@@ -53,6 +52,7 @@
     font-family: 'PT Serif','微軟正黑體','Microsoft Yahei','Hiragino Sans GB',sans-serif;
     border-bottom: 1px dotted #B5B5B5;
   }
+  .post-body pre { font-family: 'Monaco','Consolas', monospace; }
   h1 { font-size: 30px; }
   h2 { font-size: 24px; }
   h3 { font-size: 20px; }
@@ -64,7 +64,11 @@
   <div class="container">
 
     <div style="font-family:'微軟正黑體','Microsoft YaHei'; padding: 10px;">
-      <a href="{{ site.url }}">{{site.name}}</a>
+      <a href="{{ site.url }}">{{ site.name }}</a>
+      >>
+      <a href="{{ site.url }}">{{ page.categories[0] }}</a>
+      >>
+      <a href="#">{{ page.tags | join ',' }}</a>
     </div>
 
     <div class="post">

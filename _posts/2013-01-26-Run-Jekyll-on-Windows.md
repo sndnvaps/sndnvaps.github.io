@@ -6,6 +6,8 @@ tags: [Jekyll]
 published: true
 ---
 
+調整Blog版面的時候，我發覺每次都要把修改的內容推上Github後才能看，這樣實在太慢了，畢竟有時候只是微調頁面，有本地預覽的話方便多了，便打算自己的電腦上安裝Jekyll，沒想到安裝過程中踩了幾個雷。
+
 現在世界領頭搞Web技術的那一群人，不是用Mac就是用Linux，
 連XDite寫的Rails 101教學書裡也說要學好Rails的第一步就該先準備好一台Mac電腦，Windows，那啥？
 這也難怪我安裝個Jekyll會不如預期的順利了，Windows在這些新技術領域裡就跟次等公民沒什麼兩樣。
@@ -32,8 +34,6 @@ ruby dk.rb install
 檔案位置：C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.12.0\lib\jekyll\convertible.rb
 
 5. 到此為止Jekyll就算基本安裝完成了，但是Jekyll默認的Markdown解譯器是Maruku，中文支援非常的差，建議用另一套解譯器RDiscount，安裝方法： `gem install rdiscount`  (需要make)
-
-5. 弄一個Jekyll網站雛型出來
 6. 在你的Jekyll目錄下輸入 `jekyll --server --auto --rdiscount` 來編譯網站並且開啟本地伺服器。
 7. 瀏覽器打開 `http://localhost:4000` ，大功告成。
 
