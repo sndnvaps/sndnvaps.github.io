@@ -22,7 +22,9 @@ title: Home
     </div>
 
     <div style="color:#555;">
+      <p>
       {{ post.content | strip_html | truncatewords: 8 }}
+      </p>
       <br/>
       <a style="color:#256;" href="{{ post.url }}">(read more..)</a>
 
