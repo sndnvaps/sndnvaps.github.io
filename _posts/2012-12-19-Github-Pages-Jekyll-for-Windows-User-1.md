@@ -3,7 +3,7 @@ layout: post
 title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
 categories: [Tech]
 tags: [Jekyll]
-published: false
+published: true
 ---
 
 本篇是我自己從零開始建立一個 Github Pages Blog的親身經驗，保證夠懶人，幾乎不需要操作命令列。
@@ -11,7 +11,8 @@ published: false
 
 我之所以選擇Github ＆ Jekyll作為個人博客的原因 [可以參考這篇文章](http://chchwy.github.com/2012/12/Blogging-Like-a-Hacker-Github-Pages.html)。
 
-要走完本篇教學需要具備的能力只有一個，就是用文字編輯器手動修改 HTML/CSS 的能力，
+要走完本篇教學需要具備的能力只有一個，
+就是用文字編輯器手動修改 HTML/CSS 的能力，
 不需要很厲害，但是基本了解是必須的。
 不太會操作 git 也沒關係，因為沒有複雜的操作，可以慢慢來。
 
