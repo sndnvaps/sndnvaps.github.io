@@ -8,16 +8,12 @@ title: Home
 
   <section class="post">
     <div>
-      <h3 style="margin-bottom:1px; font-size: 20px; font-family:'微軟正黑體','Microsoft YaHei';">
+      <h3 style="font-family:'微軟正黑體','Microsoft YaHei';">
         <img src="img/icon/glyphicons_072_bookmark.png" />
-        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <a href="{{ post.url }}" >
           {{ post.title }}
         </a>
-
-        <div class="pull-right" style="font-size: 11px; color: #40332A;">
-        - {{ post.date | date_to_long_string }}
-        </div>
       </h3>
     </div>
 
@@ -25,9 +21,11 @@ title: Home
       <p>
       {{ post.content | strip_html | truncatewords: 8 }}
       </p>
-      <br/>
-      <a style="color:#256;" href="{{ post.url }}">(read more..)</a>
 
+      <div style="font-size: 14px; color: #999; float:right;">
+         - Posted on {{ post.date | date_to_long_string }}
+      </div>
+      <div style="clear:both;"></div>
     </div>
   </section>
 

@@ -7,11 +7,11 @@
   <link rel="stylesheet" type="text/css" href="{{ site.url }}css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ site.url }}css/hemisu-dark.css" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}feed.xml" title="Matthew - 調和的靈感 RSS 2.0 feed" >
-  <title>Matthew - 調和的靈感</title>
+  <title>{{ post.title }} Matthew - 調和的靈感</title>
 
   <style type="text/css">
-  body { font-family: 'PT Serif'; background-color:#E0DFC0; font-size: 16px; color: #2D2E25;}
-  body a { color: #AF2323; }
+  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px; color: #2D2E25;}
+  body a { color:#3D5A29; }
   body a:hover { color:#AA6D00; }
   .post {
     background-color:#F2F5DE;
@@ -21,16 +21,16 @@
     margin: 0 auto;
     border: 1px solid #C3CCD0;
   }
+  .post a
+  {
+    color: #AF2323;
+  }
   .post-title {
     padding-top:40px;
     padding-bottom:10px;
     border-bottom: solid 1px #aaa;
     margin-bottom: 30px;
   }
-
-  .right-bar { /* background-color: #C4D7A4; */ }
-  .right-bar a { display: block; width: 40px; height: 25px; padding: 10px;}
-  .right-bar a:hover { background-color: #ABC8A4;}
   .post-body img {
     border: solid 5px #fff;
     padding: 0;
@@ -62,7 +62,7 @@
 <body>
 
   <div class="container">
-
+    <br/>
     <div style="font-family:'微軟正黑體','Microsoft YaHei'; padding: 10px;">
       <a href="{{ site.url }}">{{ site.name }}</a>
       >
@@ -70,7 +70,7 @@
       >
       <a href="#">{{ page.tags | join ',' }}</a>
     </div>
-
+    <br/>
     <div class="post">
     <!-- Header ======================= -->
     <div class="post-title" >
@@ -97,36 +97,28 @@
     {% endfor %}
     </ul>
 
+    <br/><br/>
+
     </div>
 
     <br/><br/>
     {% include disqus.html %}
   </div>
 
-  <div class="right-bar" style="position:fixed; height:100%; width:60px; top:0; right:0; text-align:center;">
-    <a href="{{ site.url }}"><img src="{{site.url}}img/icon/glyphicons_020_home.png" /></a>
-    <a href="feed.xml"><img src="{{site.url}}img/icon/glyphicons_417_rss.png" /></a>
-    <a href="http://twitter.com/chchwy"><img src="{{site.url}}img/icon/glyphicons_411_twitter.png" /></a>
-    <a href="http://github.com/chchwy"><img src="{{site.url}}img/icon/glyphicons_401_github.png" /></a>
-    <a href="{{ site.url }}archieve.html" ><img src="{{site.url}}img/icon/glyphicons_114_list.png"/></a>
-  </div>
-
-
   <!-- Begin Footer -->
-  <br/><br/>
-  <div style="width: 100%;">
-    <br/>
-    <div class="container" style="text-align:center;">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a> 調和的靈感-Matt以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW" style="color:#555;">創用CC 姓名標示-非商業性-相同方式分享 3.0 Unported 授權條款</a>釋出。
+  <br/>
+  <div class="container">
+    <div style="text-align:center;">
+       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW">創用 CC 姓名標示-非商業性-相同方式分享 3.0 Unported </a>
     </div>
-    <br/>
   </div>
+  <br/>
 
   {% include analytics.html %}
 
 
-  <script src="{{ site.url }}js/prettify.js"> </script>
-  <script src="http://code.jquery.com/jquery-latest.js"> </script>
+<script src="{{ site.url }}js/prettify.js"> </script>
+<script src="http://code.jquery.com/jquery-latest.js"> </script>
 <script type="text/javascript">
 $(function() {
     $("a.embed").each(function() {
