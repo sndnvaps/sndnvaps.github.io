@@ -9,4 +9,10 @@
     <hr/>
     <!-- Place this tag where you want the search box to render -->
     <gcse:searchbox-only></gcse:searchbox-only>
+
+    <hr/>
+
+    {% if page.title == 'index' %}
+        {% include uniqlock.html %}
+    {% endif %}
 </div>

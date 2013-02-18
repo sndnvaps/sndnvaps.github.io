@@ -131,8 +131,20 @@ body > .container.main {
 
 
  /* ---  add by matt --- */
+h1,h2,h3,h4,h5 { font-family: '微軟正黑體','Microsoft YaHei'; font-weight: normal; color:#E58200; margin-top: 1.5em;}
+h1{font-size:32px;}
+h2{font-size:26px;}
+h3{font-size:20px;}
+h4{font-size:16px;}
+h5{font-size:16px;}
+h6{font-size:13.6px;}
+
 .post-list {
 	margin-left: 15px;
+}
+
+.post-list p {
+	font-size: 13px;
 }
 
 .post-list time {
@@ -143,7 +155,20 @@ body > .container.main {
 }
 
 .post-list h3 {
+	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+
+.post {
+	font-size: 16px;
+}
+
+.post-body p {
+	line-height: 1.6em;
+	margin-bottom: 1.5em;
+}
+.post-body li {
+	line-height: 1.6em;
 }
 
 time .month-day {
@@ -157,3 +182,5 @@ time .year {
 	text-align:right;
 	color: #bbb;
 }
+
+
