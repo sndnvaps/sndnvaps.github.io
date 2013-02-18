@@ -1,2 +1,5 @@
+# zzz
 *.sublime-workspace
+*.orig
+
 _site/
