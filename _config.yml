@@ -2,7 +2,7 @@ name: "調和的靈感 - Matt"
 description: Blogging Like a Hacker.
 
 baseurl: /
-url: http://localhost:4000/
+url: http://chchwy.github.com/
 feed: /atom.xml
 
 permalink: /:year/:month/:title.html
