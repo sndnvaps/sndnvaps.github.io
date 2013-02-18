@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Objective-C 學習筆記(2) Properties屬性"
-categories: [ Tech ]
+categories: [ 技術筆記 ]
 tags: [ Objective-C ]
 published: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: Mercurial學習筆記
-categoreis: [Tech]
+categories: [ 技術筆記 ]
 tags: [Mercurial]
 published: false
 ---

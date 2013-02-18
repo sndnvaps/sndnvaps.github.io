@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用AVAssetWriter輸出逐格動畫影片
-categories: [Tech]
+categories: [ 技術筆記 ]
 tags: [iOS, Objective-C]
 published: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github Pages/Jekyll博客架設指南
-categories: []
+categories: [ 技術筆記 ]
 tags: []
 published: false
 ---

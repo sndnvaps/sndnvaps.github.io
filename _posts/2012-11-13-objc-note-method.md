@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 從C++到Objective-C 方法與訊息
-categories: [Tech]
+categories: [ 技術筆記 ]
 tags: [Objective-C]
 published: false
 ---

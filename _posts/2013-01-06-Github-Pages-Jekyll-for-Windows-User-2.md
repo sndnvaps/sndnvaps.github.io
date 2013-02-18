@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Github Pages & Jekyll攻略 - 給Windows使用者 (下)"
-categories: [Tech]
+categories: [ 技術筆記 ]
 tags: [Jekyll]
 published: false
 ---

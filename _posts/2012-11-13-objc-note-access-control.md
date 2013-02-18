@@ -2,6 +2,7 @@
 layout: post
 title: 從C++到Objective-C 訪問權限
 tags: [Objective-C]
+categories: [ 技術筆記 ]
 published: false
 ---
 
