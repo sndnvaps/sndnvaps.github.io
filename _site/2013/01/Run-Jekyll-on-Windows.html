@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://localhost:4000/">
+    <title>  Windows上運行Jekyll的方法  - 調和的靈感 - Matt</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- load: css -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png" />
+    <link rel="icon" href="assets/ico/favicon.png" type="image/png" />
+
+</head>
+
+<body>
+
+    <div class="container main">
+        <div class="row">
+
+            <!-- siedbar: open -->
+            <div class="span3">
+                <div class="siedbar">
+
+    <div class="page-header small logo">
+        <a href="#"><img src="assets/img/logo.png" width="115" height="41" /></a>
+    </div>
+
+    <ul class="nav nav-list">
+
+<li class="nav-header"><a href="http://localhost:4000/">Home</a></li>
+<li class="nav-header"><a href="http://localhost:4000/about.html">About me</a></li>
+<!--<li class=""><a href="#">About me</a></li> -->
+<li class="nav-header"><a href="archieve.html">Archieve<i class="icon-chevron-right"></i></a></li>
+
+</ul>
+</div>
+            </div>
+            <!-- siedbar: close -->
+
+            <!-- content: open -->
+            <div class="span9">
+
+                <div class="main-content">
+                <h2>調和的靈感 - Matt</h2>
+                <hr/>
+
+                <ul class="breadcrumb">
+    <li>
+        <a href="#">Home</a>
+        <span class="divider">/</span>
+        <a href="#">技術筆記</a>
+    </li>
+</ul>
+
+<article>
+    <h2 class="post-title">
+        Windows上運行Jekyll的方法
+    </h2>
+    <div> 26 January 2013 </div>
+    <hr/>
+
+    <section class="post-body">
+        <p>調整 Blog 版面的時候，我發覺每次都要把修改的內容推上 Github 後才能看，實在太沒效率了，畢竟有時候只是微調頁面，很想要趕快看到效果，實在沒耐心等上幾分鐘，便打算自己的電腦上安裝 Jekyll ，沒想到安裝過程比我想像的還要麻煩。</p>
+
+<p>現在世界領頭搞Web技術的那一群人，不是用 Mac 就是用 Linux，
+連XDite寫的Rails 101教學書裡也說要學好Rails的第一步就該先準備好一台Mac電腦，Windows，那啥？
+也難怪我安裝個Jekyll會不如預期的順利了，Windows在這些新技術領域裡就跟次等公民沒什麼兩樣。</p>
+
+<p>折騰了一下午，總算能順利的在本機編譯完成，以下是我的安裝步驟筆記：</p>
+
+<h3>安裝 Jekyll 的步驟</h3>
+
+<ol>
+<li>因為Jekyll是用 Ruby 寫的，所以第一步就是安裝 <a href="http://rubyinstaller.org/downloads/">Ruby</a>，我安裝的版本是Ruby 1.9.3。</li>
+<li>運行Jekyll需要<a href="http://rubyinstaller.org/downloads/">Ruby Development Kit</a>，下載Development Kit並解壓縮後，在目錄裡輸入以下兩條命令來設置DevKit:</li>
+</ol>
+
+
+<pre>
+ruby dk.rb init
+ruby dk.rb install
+</pre>
+
+
+<ol>
+<li>接下來，就可以正式安裝Jekyll了，在命令列下輸入 <code>gem install jekyll</code></li>
+<li>安裝完後，因為Windows的編碼問題，需要把Jekyll下的convertible.rb 第29行改為，</li>
+</ol>
+
+
+<pre>
+ - self.content = File.read(File.join(base, name))
+ + self.content = File.read(File.join(base, name), :encoding => "utf-8")
+</pre>
+
+
+<p>檔案位置：C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.12.0\lib\jekyll\convertible.rb</p>
+
+<ol>
+<li>到此為止Jekyll就算基本安裝完成了，但是Jekyll默認的Markdown解譯器是Maruku，中文支援非常的差，建議用另一套解譯器RDiscount，安裝方法： <code>gem install rdiscount</code>  (需要make)</li>
+<li>在你的Jekyll目錄下輸入 <code>jekyll --server --auto --rdiscount</code> 來編譯網站並且開啟本地伺服器。</li>
+<li>瀏覽器打開 <code>http://localhost:4000</code> ，大功告成。</li>
+</ol>
+
+
+<h3>參考連結</h3>
+
+<ul>
+<li><a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html">JekyllBootstrap: Jekyll Introduction</a></li>
+<li><a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html">Running Jekyll on Windows</a></li>
+<li><a href="http://bradleygrainger.com/2011/09/07/how-to-use-github-pages-on-windows.html">How to Use Github Pages on Windows</a></li>
+</ul>
+
+
+    </section>
+</article>
+
+<hr />
+
+<hr />
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'chchwy'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+                </div>
+            </div>
+            <!-- content: close -->
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-5266256-5");
+      pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+
+    <!-- load: js libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>

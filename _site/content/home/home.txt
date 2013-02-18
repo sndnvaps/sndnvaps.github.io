@@ -1,0 +1,32 @@
+Title: Kirby bootstrap template
+
+----
+
+Text: 
+
+(pheader3: Kirby bootstrap template)
+
+Kirby ist ein simples file-based cms, made by (link: https://twitter.com/bastianallgeier text: Bastian Allgeier). Dieses Template wurde auf Basis des (link: http://twitter.github.com/bootstrap/ text: twitter bootstrap frameworks) erstellt. Die Inspiration für dieses Template war das von den (link: http://kirby.christianreber.com/ text: 6Wunderkindern). Das Template von den 6WKs ist simple und gut, ich habe dies mit ein paar kleinen änderungen sowie das hinzufügen des bootstrap frameworks neu erstellt.
+
+(pheader3: Features)
+
+* Markdown Formatting
+* Syntax Highlighting
+
+(pheader3: Installation)
+
+
+1. Download und Installation von Kirby ((link: https://github.com/bastianallgeier/kirbycms/zipball/master text: Direct Download))
+2. Download und Installation vom Kirby Template ((link: https://github.com/christianreber/kirbycms-knowledge-base/zipball/master text: Direct Download))
+
+(pheader3: Was haben ich benutzt, um dieses Template zu erstellen)
+
+* Basis/Inspiration das Template von den 6WKs (link: http://kirby.christianreber.com/ text: knowledge-base 6WKs)
+* Das (link: http://twitter.github.com/bootstrap/ text: twitter bootstrap framework)
+
+(pheader3: Sonstiges)
+
+* (link: http://twitter.com/mpunktm text: @mpunktm)
+* (link: http://getkirby.com/blog/text-formatting-101 text: Kirby Text Formatting 101)
+* (link: http://getkirby.com/content/02-docs/kirby-cheatsheet.pdf text: Kirby Cheat Sheet)
+* (link: http://getkirby.com/docs/getting-started text: Full Kurby Documentation)

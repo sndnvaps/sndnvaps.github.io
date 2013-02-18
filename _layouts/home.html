@@ -1,74 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
+    <base href="{{ site.url }}">
+    <title> {% if page.title != null %} {{ page.title }} {% endif %} - {{ site.name }}</title>
 
-  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' >
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/hemisu-dark.css" />
-  <link rel="alternate "type="application/rss+xml" href="{{ site.url }}feed.xml" title="Matthew - 調和的靈感 RSS 2.0 feed" >
-  <title>{{ site.name }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style type="text/css">
-  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px;}
-  body a { color:#3D5A29; }
-  body a:hover { color:#AA6D00; }
-  .post-title { margin: 0; }
-  .post-body { line-height: 1.8em; }
-  li { line-height: 1.8em;}
-  </style>
+    <!-- load: css -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png" />
+    <link rel="icon" href="assets/ico/favicon.png" type="image/png" />
+
 </head>
+
 <body>
 
-  <div style="height:60px;"></div>
+    <div class="container main">
+        <div class="row">
 
-  <div class="container">
+            <!-- siedbar: open -->
+            <div class="span3">
+                {% include sidebar.html %}
+            </div>
+            <!-- siedbar: close -->
 
-    <div id="header-banner">
-      <a href="{{ site.url }}">
-        <h2 style="font-family:'微軟正黑體','Microsoft YaHei'; font-weight:normal;">
-          {{ site.name }}
-        </h2>
-      </a>
+            <!-- content: open -->
+            <div class="span9">
+
+                <div class="main-content">
+                <h2>{{ site.name }}</h2>
+                <hr/>
+
+                {{ content }}
+                </div>
+            </div>
+            <!-- content: close -->
+
+        </div>
     </div>
 
-    <div style="border-top: solid 1px #DBDFD6; margin-bottom:1em;" ></div>
+    {% include analytics.html %}
 
-  </div>
+    <!-- load: js libraries -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 
-  <div class="container">
-    <div class="row-fluid">
-
-      <div class="span9">
-        <div>
-        {{ content }}
-        </div>
-      </div>
-
-      <div class="span3">
-        <ul style="margin:20px; list-style:none;">
-          <li><a href="index.html"><img src="img/my-icon/home.png"/>首頁</a></li>
-          <li><a href="#"><img src="img/my-icon/me.png"/> 關於我</a></li>
-          <li><a href="archieve.html"><img src="img/my-icon/archieve.png"/>文章列表</a></li>
-        </ul>
-      </div>
-
-    </div> <!-- out row -->
-  </div> <!-- out container-->
-
-
-  <!-- {% include rightbar.html %} -->
-
-  {% include analytics.html %}
-
-  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/prettify.js"></script>
-  <script type="text/javascript">
-  // 原先的Gist Theme太醜了，而且不支援黑底
-  $(function(){
-    prettyPrint();
-  });
-  </script>
 </body>
+
 </html>

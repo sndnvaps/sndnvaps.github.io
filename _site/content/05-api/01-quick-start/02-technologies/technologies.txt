@@ -1,0 +1,20 @@
+Title: Technologies
+----
+Text:
+
+(pheader3: Web technologies)
+
+* **Ruby 1.9.3**.
+* **Rails 3.2.x**
+
+(pheader3: Authentication & ACL)
+
+* **OAuth2**
+
+(pheader3: Asynchronous processing)
+
+* **Sidekiq**
+
+(pheader3: Data storage
+
+* **PostgreSQL**

@@ -1,147 +1,32 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8" />
+---
+layout: home
+---
 
-  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' >
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}css/hemisu-dark.css" />
-  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}feed.xml" title="Matthew - 調和的靈感 RSS 2.0 feed" >
-  <title>{{ post.title }} Matthew - 調和的靈感</title>
+<ul class="breadcrumb">
+    <li>
+        <a href="#">Home</a>
+        <span class="divider">/</span>
+        <a href="#">{{ page.categories }}</a>
+    </li>
+</ul>
 
-  <style type="text/css">
-  body { font-family: 'PT Serif'; background-color:#F2F5DE; font-size: 16px; color: #2D2E25;}
-  body a { color:#3D5A29; }
-  body a:hover { color:#AA6D00; }
-  .post {
-    background-color:#F2F5DE;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0),0 0 10px rgba(0, 0, 0, 0.1);
-    width: 780px;
-    padding: 20px 80px 60px 80px;
-    margin: 0 auto;
-    border: 1px solid #C3CCD0;
-  }
-  .post a
-  {
-    color: #AF2323;
-  }
-  .post-title {
-    padding-top:40px;
-    padding-bottom:10px;
-    border-bottom: solid 1px #aaa;
-    margin-bottom: 30px;
-  }
-  .post-body img {
-    border: solid 5px #fff;
-    padding: 0;
-    margin: 0 auto;
-    display: block;
-    background: none repeat scroll 0% 0% rgb(255, 255, 255);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  }
-  .post-body p {
-    line-height: 1.6em;
-    margin-bottom: 1.5em;
-  }
-  .post-body li { line-height: 1.8em; }
-  ul { list-style-type: circle; }
-  .post-body blockquote p { margin: 0; }
-  .post-body h1, h2, h3, h4 {
-    margin-top: 2em;
-    font-weight: 500;
-    font-family: 'PT Serif','微軟正黑體','Microsoft Yahei','Hiragino Sans GB',sans-serif;
-    border-bottom: 1px dotted #B5B5B5;
-  }
-  .post-body pre { font-family: 'Monaco','Consolas', monospace; }
-  h1 { font-size: 30px; }
-  h2 { font-size: 24px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 16px; }
-  </style>
-</head>
-<body>
+<article>
+    <h2 class="post-title">
+        {{ page.title }}
+    </h2>
+    <div> {{ page.date | date_to_long_string }} </div>
+    <hr/>
 
-  <div class="container">
-    <br/>
-    <div style="font-family:'微軟正黑體','Microsoft YaHei'; padding: 10px;">
-      <a href="{{ site.url }}">{{ site.name }}</a>
-      >
-      <a href="{{ site.url }}">{{ page.categories[0] }}</a>
-      >
-      <a href="#">{{ page.tags | join ',' }}</a>
-    </div>
-    <br/>
-    <div class="post">
-    <!-- Header ======================= -->
-    <div class="post-title" >
-
-      <div style="">
-        {{ page.date | date_to_long_string }}
-        <a href="{{ site.url }}">
-          <h1 style="margin:9px 0; font-size: 26px; font-family:'微軟正黑體','Microsoft YaHei'; font-weight:bold; line-height:1.3em;">
-            {{ page.title }}
-          </h1>
-        </a>
-      </div>
-    </div>
-
-    <div class="post-body">
+    <section class="post-body">
         {{ content }}
-    </div>
+    </section>
+</article>
+
+<hr />
+
+<hr />
+{% include disqus.html %}
 
 
-    <h4 style="border-bottom: solid 1px #bbb; margin-top: 5em;">相關文章</h4>
-    <ul>
-    {% for pp in site.related_posts limit:3 offset:1 %}
-      <li> <a href="{{ site.url }}{{ pp.url }}"> {{ pp.title }} </a> </li>
-    {% endfor %}
-    </ul>
-
-    <br/><br/>
-
-    </div>
-
-    <br/><br/>
-    {% include disqus.html %}
-  </div>
-
-  <!-- Begin Footer -->
-  <br/>
-  <div class="container">
-    <div style="text-align:center;">
-       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh_TW">創用 CC 姓名標示-非商業性-相同方式分享 3.0 Unported </a>
-    </div>
-  </div>
-  <br/>
-
-  {% include analytics.html %}
 
 
-<script src="{{ site.url }}js/prettify.js"> </script>
-<script src="http://code.jquery.com/jquery-latest.js"> </script>
-<script type="text/javascript">
-$(function() {
-    $("a.embed").each(function() {
-        var $link = $(this);
-
-        $.ajax({
-            url: $link.attr('href'),
-            dataType: 'jsonp',
-            error: function(xhr, status, error) {
-                alert(error);
-            },
-            success: function(response) {
-
-                var code = $('<pre>')
-                    .addClass('prettyprint')
-                    .text(response.data);
-
-                $link.replaceWith(code);
-                prettyPrint();
-            }
-        });
-    });
-});
-</script>
-</body>
-</html>
