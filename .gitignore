@@ -1,16 +1,2 @@
 
-assets/.DS_Store
-
-.DS_Store
-
-site/.DS_Store
-
-site/.DS_Store
-
-site/plugins/.DS_Store
-
-site/snippets/.DS_Store
-
-site/plugins/highlight/.DS_Store
-
-site/plugins/highlight/highlight/.DS_Store
+_site
