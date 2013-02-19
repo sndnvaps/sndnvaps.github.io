@@ -9,15 +9,16 @@ published: true
 這是我學習Objective-C中記錄下來的筆記，有時會參雜一些自己的看法。
 
 典型的C字串的型態是`const char[]`，比如說下面就是個C字串
-
-    const char str[] = "This is a C string";
+~~~
+const char str[] = "This is a C string";
+~~~
 
 Objective-C雖然基於C語言，但是C字串實在太難用了，所以Objective-C有自己獨有的字串物件 - NSString。Foundation Framework也都以NSString為基礎。
 
 只要字串常數的開頭冠上一個@符號，該字串就被編譯器視為`NSString*`型態，如:
-
-    NSString* str = @"This is a Obj-c string";
-
+~~~
+NSString* str = @"This is a Obj-c string";
+~~~
 NSString支持Unicode，內部採用UTF-16編碼儲存字串，由characterAtIndex:方法的回傳值可以察覺，
 字串內的單個字元型態是unichar，而unichar又被定義為unsigned short (2 bytes)。
 

@@ -9,7 +9,7 @@ permalink: /:year/:month/:title.html
 markdown: redcarpet
 
 redcarpet:
-  extensions: [tables]
+  extensions: [tables, fenced_code_blocks]
 
 lsi: true
 
