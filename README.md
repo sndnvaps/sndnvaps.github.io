@@ -1,6 +1,5 @@
 ## chchwy.github.com
 
-[my blog](http://chchwy.github.com)
+[My blog http://chchwy.github.com](http://chchwy.github.com)
 
-based on Kirby bootstrap template
-http://mpunktm.github.com/kirby-bootstrap-template/
+Theme by [Kirby bootstrap template](http://mpunktm.github.com/kirby-bootstrap-template/)
