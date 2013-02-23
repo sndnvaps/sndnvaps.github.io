@@ -1,5 +1,5 @@
 body {
-	background-color: #696969;
+	background-color: #94948C;
 	color: #404040;
 }
 
@@ -21,7 +21,7 @@ body > .container.main {
 .siedbar {
 	border: 1px solid #ccc;
 	padding: 20px 0 20px 20px;
-	background-color: #efefef;
+	background-color: #EFF0E0;
 	margin-bottom: 20px;
 }
 
@@ -75,7 +75,7 @@ body > .container.main {
 .main-content {
 	border: 1px solid #ccc;
 	padding: 20px;
-	background-color: #efefef;
+	background-color: #EFF0E0;
 	position: relative;
  }
 
