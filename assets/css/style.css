@@ -1,5 +1,5 @@
 body {
-	background-color: #94948C;
+	background-color: #D5D5C6;
 	color: #404040;
 }
 
@@ -180,7 +180,7 @@ time .month-day {
 time .year {
 	display:block;
 	text-align:right;
-	color: #bbb;
+	color: #969696;
 }
 
 
