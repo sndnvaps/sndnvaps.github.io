@@ -2,7 +2,12 @@
 <html>
 <head>
     <base href="{{ site.url }}">
-    <title> {% if page.title != null %} {{ page.title }} {% endif %} - {{ site.name }}</title>
+    <title>
+        {% if page.title != null %}
+            {{ page.title }} -
+        {% endif %}
+        {{ site.name }}
+    </title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
