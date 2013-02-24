@@ -25,16 +25,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png" />
     <link rel="icon" href="assets/ico/favicon.png" type="image/png" />
 
-    <!-- Put the following javascript before the closing </head> tag. -->
-    <script>
-      (function() {
-        var cx = '000170238547671669370:begaamuplje';
-        var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
+    {% include google_custom_search.html %}
 </head>
 
 <body>
