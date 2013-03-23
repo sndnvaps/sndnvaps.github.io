@@ -2,15 +2,12 @@
 <html>
 <head>
     <base href="{{ site.url }}">
-    <title>
-        {% if page.title != null %}
-            {{ page.title }} -
-        {% endif %}
-        {{ site.name }}
-    </title>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="robots" content="index,follow" />
 
     <!-- load: css -->
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' />
@@ -24,6 +21,13 @@
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="shortcut icon" href="assets/ico/favicon.png" type="image/png" />
     <link rel="icon" href="assets/ico/favicon.png" type="image/png" />
+
+    <title>
+        {% if page.title != null %}
+            {{ page.title }} -
+        {% endif %}
+        {{ site.name }}
+    </title>
 
     {% include google_custom_search.html %}
 </head>

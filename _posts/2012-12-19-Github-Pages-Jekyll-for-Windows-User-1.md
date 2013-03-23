@@ -7,7 +7,7 @@ published: true
 ---
 
 本篇是我自己從零開始建立 Github Pages 獨立博客的親身經驗，現在我更新博客也都是走這個流程。
-順帶一提，我自己用的是 Windows，所以本文對象是 Windows 平台的使用者。
+順帶一提，我自己用的是 Windows，所以本文對象是 Windows 用戶。
 
 我選擇Github ＆ Jekyll作為個人博客的[原因](http://chchwy.github.com/2012/12/Blogging-Like-a-Hacker-Github-Pages.html)。
 
@@ -24,7 +24,7 @@ published: true
 Github Pages的更新與上傳都要透過git，這是第一個需要跨過的門檻。
 因為git並不是個容易學習的東東，大多數的操作需要命令列。
 
-好在 Github 很貼心的為不擅長命令列操作的Windows使用者開發了這個工具「Github for Windows」，很大程度的降低了在Windows平台上使用git的門檻。
+好在 Github 很貼心的為不擅長命令列操作的Windows使用者開發了這個工具 「Github for Windows」， 很大程度的降低了在Windows平台上使用git的門檻。
 像我自己這種一招半式闖江湖，只會一些簡單git命令的人，有這個工具幫助真是再好不過了。
 
 [Github for Windows下載頁面](http://windows.github.com/)，馬上安裝吧。

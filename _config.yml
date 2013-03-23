@@ -1,7 +1,6 @@
 name: "調和的靈感 - Matt"
 description: Blogging Like a Hacker.
 
-baseurl: /
 url: http://chchwy.github.com/
 feed: /atom.xml
 
@@ -14,4 +13,3 @@ redcarpet:
 lsi: true
 
 pygments: false
-

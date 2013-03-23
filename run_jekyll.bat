@@ -1,1 +1,1 @@
-jekyll --server --auto --rdiscount
+jekyll --server --auto --rdiscount --url http://localhost:4000/
