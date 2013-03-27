@@ -1,31 +1,19 @@
 ---
-layout: home
+layout: layout
 ---
 
-<ul class="breadcrumb">
-    <li>
-        <a href="index.html">{{ site.name }}</a>
-        <span class="divider">/</span>
-        <a href="#">{{ page.categories }}</a>
-    </li>
-</ul>
+<section class="content">
+  <h1>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
 
-<article class="post">
-    <h2 class="post-title">
-        {{ page.title }}
-    </h2>
-    <div> {{ page.date | date_to_long_string }} </div>
-    <hr/>
+  <section class="byline">
+    {{ page.date | date: "%B %e, %Y" }}
+  </section>
 
-    <section class="post-body">
-        {{ content }}
-    </section>
-</article>
-
-<hr />
-<section>Tag: {{ page.tags | join: "," }}</section>
-<hr />
-{% include disqus.html %}
-
-
-
+  {{ content }}
+  <div class="pull"></div>
+  {% include twitter.html %}
+  <hr>
+  {% include disqus.html %}
+</section>

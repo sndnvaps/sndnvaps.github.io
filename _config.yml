@@ -1,15 +1,22 @@
-name: "調和的靈感 - Matt"
-description: Blogging Like a Hacker.
 
+title : Mat - 調和的靈感
 url: http://chchwy.github.com/
-feed: /atom.xml
 
-permalink: /:year/:month/:title.html
+permalink: /posts/:title
+
 markdown: redcarpet
-
-redcarpet:
-  extensions: [tables, fenced_code_blocks]
-
-lsi: true
-
 pygments: false
+
+auto: true
+rdiscount:
+  extensions: [smart]
+
+production_url : http://chchwy.github.com
+description: ""
+disqus_shortname: chchwy
+analytics: UA-32899481-1
+gauges: 50f2b533613f5d7c8000000c
+author :
+  name : chchwy
+  github : chchwy
+  twitter : chchwy
