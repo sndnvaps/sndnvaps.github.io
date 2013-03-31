@@ -1,5 +1,4 @@
-# zzz
-*.sublime-workspace
-*.orig
-
-_site/
+_site
+media/
+_posts/_figure
+_posts/_cache
