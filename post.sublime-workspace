@@ -180,18 +180,34 @@
 			}
 		},
 		{
-			"file": "categories/index.md",
-			"settings":
-			{
-				"buffer_size": 952,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "_layouts/default.html",
 			"settings":
 			{
 				"buffer_size": 1983,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "readme.markdown",
+			"settings":
+			{
+				"buffer_size": 39,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 193,
 				"line_ending": "Windows"
 			}
 		}
@@ -324,6 +340,10 @@
 	},
 	"file_history":
 	[
+		"/D/Work/Github/chchwy.github.com/links/index.md",
+		"/D/Work/Github/chchwy.github.com/index.md",
+		"/D/Work/Github/chchwy.github.com/categories/index.md",
+		"/D/Work/Github/chchwy.github.com/about.html",
 		"/D/Work/Github/yihui.github.com/_layouts/home.html",
 		"/D/Work/Github/yihui.github.com/index.md",
 		"/D/Work/Github/cn/_config.yml",
@@ -341,7 +361,6 @@
 		"/D/Work/Github/chchwy.github.com/run_jekyll.bat",
 		"/D/Backup/www/inpr/class/class_Pager.php",
 		"/D/Work/BitBucket/chchwyacm/485.cpp",
-		"/D/Work/Github/chchwy.github.com/about.html",
 		"/D/Work/Github/chchwy.github.com/_includes/google_custom_search.html",
 		"/D/Work/Github/chchwy.github.com/assets/css/style.css",
 		"/D/Work/Github/chchwy.github.com/_posts/2012-10-19-objc-note-string.md",
@@ -448,10 +467,7 @@
 		"/C/Users/Mat/Desktop/Home/index.html",
 		"/D/Work/Github/chchwy.github.com/_layouts/default.html",
 		"/C/Users/Mat/Desktop/研替題目.md",
-		"/D/Work/Github/chchwy.github.com/stylesheets/styles.css",
-		"/D/Work/Github/chchwy.github.com/_posts/2012-10-19-GithubPage-HowTo.md",
-		"/D/Work/Github/chchwy.github.com/_posts/2012-10-21-我的2011研發替代役面試心得.md",
-		"/D/Work/Github/chchwy.github.com/_posts/2012-10-19-from-c-to-objective-c.md"
+		"/D/Work/Github/chchwy.github.com/stylesheets/styles.css"
 	],
 	"find":
 	{
@@ -459,7 +475,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 111.0,
 		"where_history":
 		[
 			".",
@@ -483,6 +499,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"keep Fighting",
 			"jQuery",
 			"time",
 			"post_url",
@@ -609,8 +626,7 @@
 			"enterfirst",
 			"LoadLevel(\"test\"",
 			"GUI_StartMenu.",
-			"playBackBeginTime",
-			"Head"
+			"playBackBeginTime"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -660,7 +676,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -691,32 +707,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "categories/index.md",
-					"settings":
-					{
-						"buffer_size": 952,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								508,
-								508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "_layouts/default.html",
 					"settings":
 					{
@@ -727,8 +717,8 @@
 						"selection":
 						[
 							[
-								1339,
-								1339
+								743,
+								743
 							]
 						],
 						"settings":
@@ -738,7 +728,85 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 375.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "readme.markdown",
+					"settings":
+					{
+						"buffer_size": 39,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_layouts/page.html",
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_config.yml",
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
