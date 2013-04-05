@@ -2,7 +2,7 @@
 name: 調和的靈感
 url: http://chchwy.github.com
 
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:title.html
 
 author: Matt Chiawen Chang
 pygments: false
