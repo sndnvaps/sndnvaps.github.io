@@ -1,2 +1,5 @@
 _site
 *.sublime-workspace
+*.orig
+Thumbs.db
+.DS_Store
