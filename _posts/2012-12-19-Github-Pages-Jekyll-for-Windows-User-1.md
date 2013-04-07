@@ -34,7 +34,7 @@ Github Pages的更新與上傳都要透過git，這是第一個需要跨過的�
 第一次啟動Github for Windows程式，會要求你輸入Github的帳號與密碼。
 接著按下視窗中央正上方的`+add`創建Git版本庫:
 
-![Create Reponsitory]({{site.url}}img/001-create-repo.png)
+![Create Reponsitory]({{site.url}}/img/001-create-repo.png)
 
 在創建版本庫時，**最重要的是版本庫必須取名為**
 
@@ -55,7 +55,7 @@ Push to github選項記得要勾。按下Create按鈕，版本庫就算創建完
 
 接著按下上方的齒輪圖示tools -> open in explorer，打開版本庫所在目錄。
 
-![Open in Explorer]({{ site.url }}img/002-open-explorer.png)
+![Open in Explorer]({{ site.url }}/img/002-open-explorer.png)
 
 往目錄裡添加一個 index.html 作為網站首頁，檔案內容如下:
 
