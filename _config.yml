@@ -11,3 +11,6 @@ markdown: redcarpet
 
 disqus_shortname: chchwy
 analytics: UA-5266256-5
+
+redcarpet:
+  extensions: [tables, fenced_code_blocks]
