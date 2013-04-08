@@ -3,7 +3,7 @@ layout: post
 title: "Objective-C學習筆記(1) 字串兩三事"
 categories: [ 技術筆記 ]
 tags: [ Objective-C ]
-published: true
+published: false
 ---
 
 這是我學習Objective-C中記錄下來的筆記，有時會參雜一些自己的看法。
@@ -95,5 +95,3 @@ NSString雖然只是個字串類別，但是自帶了很多可愛而方便的方
 [1]: http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/ObjCAvailabilityIndex/_index.html "Objective-C Feature Available."
 [2]: http://clang.llvm.org/docs/ObjectiveCLiterals.html "Objective-C new literal"
 -->
-
-
