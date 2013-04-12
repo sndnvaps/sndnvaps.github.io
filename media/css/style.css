@@ -72,15 +72,15 @@ img{margin:0 0 18px 0}
 /* @group typography.css */
 
 body {
-  font-size: 14px;
-  line-height: 18px; /* Do a complete find/replace on "18px" to change this */
+  font-size: 16px;
+  line-height: 1.6em; /* Do a complete find/replace on "18px" to change this */
 }
 
 
 /* Default fonts */
 h1,h2,h3,
 h4,h5,h6  { font-family: "Helvetica Neue", "微軟正黑體", "Microsoft YaHei", Helvetica, sans-serif; }
-body      { font-family: "PT Serif","微軟正黑體","Microsoft YaHei","Lucida Grande", Calibri, Arial, sans-serif; }
+body      { font-family: "PT Serif","Lucida Grande", Calibri, Arial, sans-serif; }
 pre       { font-family: Menlo, Consolas, Monaco, "Courier New", monospace; }
 code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; }
 
@@ -259,7 +259,7 @@ body.advisories #nav-advisories,body.community #nav-community,body.blog #nav-blo
 /* @group Main */
 
 #main {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.5em;
 	color: #1E250D;
 }
