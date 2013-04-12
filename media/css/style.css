@@ -79,7 +79,7 @@ body {
 
 /* Default fonts */
 h1,h2,h3,
-h4,h5,h6  { font-family: "Helvetica Neue", Helvetica, sans-serif; }
+h4,h5,h6  { font-family: "Helvetica Neue", "微軟正黑體", "Microsoft YaHei", Helvetica, sans-serif; }
 body      { font-family: "PT Serif","微軟正黑體","Microsoft YaHei","Lucida Grande", Calibri, Arial, sans-serif; }
 pre       { font-family: Menlo, Consolas, Monaco, "Courier New", monospace; }
 code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; }
@@ -93,7 +93,7 @@ h1,h2,h3,h4,h5,h6 {
   clear:both;
 }
 
-h1 { font-size: 30px; line-height:36px; padding:0 0 18px 0; }
+h1 { font-size: 26px; line-height:36px; padding:0 0 18px 0; }
 h2 { font-size: 20px; line-height:36px; }
 h3 { font-size: 16px; line-height:36px; }
 h4 { font-size: 14px; font-weight:bold; }
@@ -170,11 +170,12 @@ p.quiet   { color: #666; }
 	margin-bottom: 1.8em;
 }
 #site-name a {
-	text-indent: -1000em;
-	background: url(../images/oauth-logo.png) no-repeat 0 0;
+	/* text-indent: -1000em; */
+	/* background: url(../images/oauth-logo.png) no-repeat 0 0; */
 	width: 200px;
 	height: 60px;
 	display: block;
+	text-decoration: none;
 }
 #site-description {
 	padding-top: 1.4em;
@@ -231,7 +232,7 @@ ul.navigation li {
 }
 #secondary {
 	padding-top: 7px;
-	background-color: #f8fbfd;
+	background-color: #D5DBC5;
 }
 #secondary ul.navigation {
 	margin-bottom: 7px;
@@ -389,8 +390,8 @@ clear: both;
 }
 
 /* Listing */
-li{padding:.2em 0;}
-ol,ul{list-style-position:inside;}
+li {padding:.2em 0;}
+ol,ul {list-style-position:inside;}
 ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 
 .listing-item,.listing-seperator{list-style-type:none;}
