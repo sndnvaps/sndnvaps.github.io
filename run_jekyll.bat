@@ -1,1 +1,1 @@
-jekyll --server --auto --rdiscount --url http://localhost:4000/
+jekyll --server --auto --redcarpet --url http://localhost:4000
