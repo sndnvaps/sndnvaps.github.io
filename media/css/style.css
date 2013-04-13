@@ -118,7 +118,7 @@ dl dt       { font-weight: bold; }
 a           { color: #5B7238; text-decoration: underline; outline: none; }
 a:hover     { color: #000; }
 
-blockquote  { margin: 0 0 18px 18px; color: #666; font-style: italic; }
+blockquote  { padding: 0 0 0 18px; margin-bottom: 18px; color: #666; border-left: solid 5px #999; }
 strong      { font-weight: bold; }
 em          { font-style: italic; }
 pre         { margin-bottom: 18px; background: #eee; border:1px solid #ddd; padding:16px; }
