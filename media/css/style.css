@@ -402,5 +402,13 @@ ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 /* Meta section */
 .meta{text-align:right;font-size:12px;}
 
+.book-cover {
+	clear: right; float: left; margin-bottom: 1em; margin-right: 1em;
+}
+.book-cover img {
+	padding: 5px;
+	border: solid 1px #eee;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
 /* @end */
 
