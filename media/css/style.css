@@ -406,7 +406,7 @@ ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 	clear: right; float: right; margin-bottom: 1em; margin-right: 1em;
 }
 .book-cover img {
-	padding: 5px;
+	padding: 0;
 	border: solid 1px #eee;
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 }
