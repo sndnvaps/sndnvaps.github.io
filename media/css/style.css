@@ -403,7 +403,7 @@ ol ul, ul ol, ul ul, ol ol {margin-left:1em;}
 .meta{text-align:right;font-size:12px;}
 
 .book-cover {
-	clear: right; float: left; margin-bottom: 1em; margin-right: 1em;
+	clear: right; float: right; margin-bottom: 1em; margin-right: 1em;
 }
 .book-cover img {
 	padding: 5px;
