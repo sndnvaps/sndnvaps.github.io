@@ -6,13 +6,11 @@ categories: 讀書心得
 tags: Linux, 讀書心得
 ---
 
-<a href="http://www.anobii.com/books/Linux_%E5%82%B3%E5%A5%87/9789571333632/01703e4119ee4f88ab/" style="clear: left; float: right; margin-bottom: 1em; margin-right: 1em;" title="More about Linux 傳奇"><img alt="More about Linux 傳奇" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01703e4119ee4f88ab&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about Linux 傳奇" /></a>
-
-## Rebel Code 開源革命史
+<a href="http://www.anobii.com/books/Linux_%E5%82%B3%E5%A5%87/9789571333632/01703e4119ee4f88ab/" class="book-cover" title="More about Linux 傳奇"><img alt="More about Linux 傳奇" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01703e4119ee4f88ab&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about Linux 傳奇" /></a>
 
 報導文學的傑作！
 
-回想上一次心中同樣令我心中湧現出如此激動的書，已經是四五年前讀的『宇宙的寂寞心靈』。這兩本書的共同點就是雖然主題是科學技術，但是卻對人性有深刻的描寫。技術是冰冷的，但是走在大時代洪流中的人，卻是各個有血有肉。
+回想上一次令我心中同樣湧現出如此激動的書，已經是四五年前讀的『宇宙的寂寞心靈』。這兩本書的共同點就是雖然主題是科學技術，但是卻對人性有深刻的描寫。技術是冰冷的，但是走在大時代洪流中的人，卻是各個有血有肉。
 
 原文書名叫做『Rebel Code』，直譯叫『叛碼』 (吐槽一下糟糕的中文書譯名，尤其副標題比爾蓋茲云云可說完全搞錯方向)。這個書名非常有意思，因為這兒Code是個雙關，一個意思是程式碼，另一個意思是法典。恰恰代表了本書描寫的兩個對象，以Linux為首顛覆傳統開發方式大獲成功的開源軟體，以及一群奔放不羈、充滿理想的平凡人，運用自己的力量搖動世界成為典範的故事。
 
