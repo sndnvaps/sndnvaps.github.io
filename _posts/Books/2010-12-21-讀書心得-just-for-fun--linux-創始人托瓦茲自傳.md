@@ -6,9 +6,9 @@ categories: 讀書心得
 tags: Linux, 讀書心得
 ---
 
-<a href="http://www.anobii.com/books/Just_for_Fun/9789574761234/0163a0d1f1ef6809f2/" style="clear: left; float: right; margin-bottom: 1em; margin-right: 1em;" title="More about Just for Fun"><img alt="More about Just for Fun" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=0163a0d1f1ef6809f2&amp;time=0" style="display: inline; margin-left: 0px; margin-right: 0px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about Just for Fun" /></a>
+<a href="http://www.anobii.com/books/Just_for_Fun/9789574761234/0163a0d1f1ef6809f2/" class="book-cover" title="More about Just for Fun"><img alt="More about Just for Fun" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=0163a0d1f1ef6809f2&amp;time=0" title="More about Just for Fun" /></a>
 
-## 不平凡的平凡人
+不平凡的平凡人
 
 從封面來看，本書出版時是一定是重點企劃項目，不只號稱台美同步發行，還請了五個名人來寫推薦序呢。不過我向來對這種出版社力推的書沒什麼好感。
 
