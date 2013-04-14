@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: 讀書心得: Effective C++ 3/e
+title: 讀書心得--Effective C++ 3/e
 categories: 讀書心得
 tags: C++, 讀書心得
 ---
