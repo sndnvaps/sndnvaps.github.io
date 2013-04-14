@@ -3,7 +3,7 @@ layout: post
 published: true
 title: 讀書心得--Linux傳奇 (Rebel Code)
 categories: 讀書心得
-tags: Linux, 讀書心得
+tags: Linux 讀書心得
 ---
 
 <a href="http://www.anobii.com/books/Linux_%E5%82%B3%E5%A5%87/9789571333632/01703e4119ee4f88ab/" class="book-cover" title="More about Linux 傳奇"><img alt="More about Linux 傳奇" src="http://image.anobii.com/anobi/image_book.php?type=5&amp;item_id=01703e4119ee4f88ab&amp;time=0" style="padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px;" title="More about Linux 傳奇" /></a>
