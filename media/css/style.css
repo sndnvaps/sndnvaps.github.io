@@ -80,7 +80,7 @@ body {
 /* Default fonts */
 h1,h2,h3,
 h4,h5,h6  { font-family: "Helvetica Neue", "微軟正黑體", "Microsoft YaHei", Helvetica, sans-serif; }
-body      { font-family: "PT Serif","Lucida Grande", Calibri, Arial, sans-serif; }
+body      { font-family: 'PT Serif',"Lucida Grande", Calibri, Arial, sans-serif; }
 pre       { font-family: Menlo, Consolas, Monaco, "Courier New", monospace; }
 code      { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace; }
 
