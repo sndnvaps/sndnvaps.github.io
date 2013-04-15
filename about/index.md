@@ -8,9 +8,9 @@ comments: yes
 
 待補...
 
-* Github: [chchwy](http://github.com/chchwy)
-* Plurk: [chchwy](http://www.plurk.com/chchwy)
-* Twitter: [chchwy](http://twitter.com/chchwy)
+* Github: [http://github.com/chchwy](http://github.com/chchwy)
+* Plurk: [http://plurk.com/chchwy](http://www.plurk.com/chchwy)
+* Twitter: [http://twitter.com/chchwy](http://twitter.com/chchwy)
 
 # 個人興趣
 
