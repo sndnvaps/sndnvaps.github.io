@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
+categories: [ 技術筆記 ]
+tags: [Jekyll]
+date: 2013-01-05
+published: true
+---
+
 本篇是我自己從零開始建立 Github Pages 獨立博客的經驗，現在我更新博客也都是走這個流程。
 順帶一提，我自己用的是 Windows，所以本文對象是 Windows 用戶。
 
