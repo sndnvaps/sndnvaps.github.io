@@ -3,6 +3,7 @@ layout: post
 title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
 categories: [ 技術筆記 ]
 tags: [Jekyll]
+date: 2013-01-05
 published: true
 ---
 
