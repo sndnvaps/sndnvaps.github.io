@@ -6,11 +6,11 @@ comments: yes
 
 # 我是谁
 
-待補...
 
-* Github: [http://github.com/chchwy](http://github.com/chchwy)
-* Plurk: [http://plurk.com/chchwy](http://www.plurk.com/chchwy)
-* Twitter: [http://twitter.com/chchwy](http://twitter.com/chchwy)
+# 關注我
+
+* [Github](http://github.com/chchwy) | [Bitbucket](http://bitbucket.org/chchwy)
+* [Plurk](http://www.plurk.com/chchwy) | [Twitter](http://twitter.com/chchwy)
 
 # 個人興趣
 
