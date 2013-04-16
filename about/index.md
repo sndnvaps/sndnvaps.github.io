@@ -11,6 +11,7 @@ comments: yes
 
 * [Github](http://github.com/chchwy) | [Bitbucket](http://bitbucket.org/chchwy)
 * [Plurk](http://www.plurk.com/chchwy) | [Twitter](http://twitter.com/chchwy)
+* [Anobii](http://www.anobii.com/chchwy)
 
 # 個人興趣
 
