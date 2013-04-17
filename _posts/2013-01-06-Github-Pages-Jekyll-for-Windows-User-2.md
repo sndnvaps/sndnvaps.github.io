@@ -8,8 +8,8 @@ published: true
 
 開始之前，請確定您已經可以用[上一篇]({{ site.url }}/2012/12/Github-Pages-Jekyll-for-Windows-Lasy-User-1.html)的方式，準備好一個 git 版本庫並且與Github同步。
 
-Github Pages 採用了 [Jekyll](https://github.com/mojombo/jekyll) 作為後端系統。
-Jekyll是一套靜態博客的生產引擎，只要遵守一些簡單的約定，它就可以生出一個完整的博客給你。
+Github Pages 採用了 [Jekyll][1] 作為後端系統。
+Jekyll是一套靜態博客的生產引擎，只要遵守一些簡單的約定，它就可以把網頁和文字檔組織成一個完整的博客。
 
 
 ## Jekyll
@@ -24,18 +24,17 @@ Jekyll也不例外，是由這三種東西構成的。
 
 ## 設定
 
-要啟用Jekyll，第一步就是在目錄裡添加一個名為 `_config.yml` 的文件，_config.yml 是 Jekyll博客默認的配置文件。
+要啟用Jekyll，第一步就是在目錄裡添加一個名為 `_config.yml` 的文件，_config.yml 是 Jekyll博客默認的配置文件。通常我們會在裡頭做 Jekyll博客的全站配置。
 
-首先給`_config.yml`填入以下內容:
+給`_config.yml`文件填入以下內容:
 
     name: 我的博客
     url: http://yourid.github.io/
     markdown: rdiscount
 
-通常 _config.yml 文件裡頭寫的都是全站配置。
-例如上面的第一行我們給博客起了個名字 **我的博客**，第二行是博客的網址 (記得把yourid換成你的Github帳號)，第三行則要求 Jekyll 編譯博客時採用對中文較友善的 RDiscount 解譯器。其他沒有寫出來的設置就是採默認值。
+文件的第一行我們給博客起了個名字 「我的博客」 (當然可以起其他名字，隨你高興)，第二行則是博客的網址 (記得把yourid換成你的Github帳號)，第三行則要求 Jekyll 編譯博客時採用對中文較友善的 RDiscount 解譯器。其他沒有寫出來的設置就是採默認值。完整的設置可以參考[官方文件][2]。
 
-這種配置文件的寫法叫做YAML格式，每項設置一行。需要注意的是，**冒號後面一定要跟著一個空格**，這是YAML的規矩，少了這個空格，編譯網站就會報錯。
+這種設置文件的寫法叫做YAML表示法，每項設置一行。需要注意的是 **冒號後面一定要跟著一個空格**，這是YAML的規矩，少了這個空格，編譯網站就會報錯。
 
 現在的Jekyll目錄結構應該像這樣，只有一個文件:
 
@@ -47,7 +46,8 @@ Jekyll也不例外，是由這三種東西構成的。
 
 接著我們來製作博客的門面： `index.html`。
 
-在`index.html`填入以下內容:
+同樣在目錄下創建一個`index.html`，並填入以下內容:
+
 {% highlight html %}
 <!DOCTYPE html>
 <html>
@@ -68,15 +68,21 @@ Jekyll也不例外，是由這三種東西構成的。
 </html>
 {% endhighlight %}
 
-這是個典型的HTML文件。比較特殊的是 HTML 標籤內有許多的花括號，這是Jekyll 用的排版語言，叫做 Liquid 語言。所有被兩個花括號夾起來的變量，都會在編譯博客時被替換為適當的文字。
+index.html 就是個大家熟悉的典型的HTML文件。比較特殊的是 HTML 標籤內夾有許多的花括號，這是什麼呢? 其實這是Jekyll 用的排版語言，叫做 Liquid 語言。 所有被兩個花括號夾起來的變量，都會在編譯博客時被替換為適當的文字。
 
-像`{{ "{{ site.name "}}}}`在編譯時會被替換成**我的博客**，因為我們在`_config.yml`裡頭就是這樣配置的，所有`_config.yml`文件內定義的變量，都可以透過 site 來獲取。 同理`{{ "{{ site.url "}}}}`也會被替換為`http://yourid.github.com/`。
+像`{{ "{{ site.name "}}}}`在編譯時會被替換成 **我的博客**，這是因為我們在`_config.yml`裡頭寫著 `name: 我的博客`。所有`_config.yml`文件內定義的設置值，都可以透過 site.xxx 來獲取。 同理文件中所有的`{{ "{{ site.url "}}}}`也會在編譯時被替換為`http://yourid.github.io/`。
 
-除了自己定義的變量外，有一些是Jekyll系統內定的變量，如 site.posts 就是全部的博文列表。
+除了自己定義的變量外，還有一些是Jekyll引擎的變量，例如取得全部的文章列表的 site.posts，放進 for 迴圈就能遍歷博客中的所有文章。
 
-Liquid語言中以`{{ "{%  "}}%}`夾起來的部分通常有特別的用途，如 `{{ "{% for post in site.posts "}}%}` 就是用 for 迴圈遍歷整個博客中的所有文章，`{{ "{{ post.title "}}}}`是文章標題。
+{% highlight html %}
+{% for post in site.posts "}}%}
+    // do something inside...
+{{ "{% endfor " }}%}
+{% endhighlight}
 
-現在Jekyll目錄應該有兩個檔案了:
+`{{ "{%  "}}%}` 夾起來的部分是 Liquid 排版語言的控制語句， for迴圈是其中一種。 我們用它在首頁循環印出每篇文章的標題`{{ "{{ post.title "}}}}`。
+
+現在Jekyll目錄裡應該有兩個檔案了:
 
     \
     |- _config.yml
@@ -85,9 +91,12 @@ Liquid語言中以`{{ "{%  "}}%}`夾起來的部分通常有特別的用途，�
 
 ## 內容
 
-接著請在Jekyll目錄下建立一個`_posts`目錄，這是Jekyll默認存放博客文章的地方。
+接著要開始來寫文章了。
 
-在`_posts`目錄裡添加一個文件，名為`2013-03-24-my-first-post.md`。Jekyll中規定博客文章的檔名一定要符合這個規矩，yyyy-mm-dd-title.md。
+請在Jekyll目錄下建立一個名為`_posts`的目錄，
+這是Jekyll默認存放博客文章的地方。
+
+Jekyll 規定博客文章的文件名必須要符合這個命名規矩: **yyyy-mm-dd-title.md**。 遵循這個慣例，我們在在`_posts`目錄裡創建一個名為`2013-04-18-my-first-post.md`的文件。
 
 文件內容則填入:
 
@@ -97,6 +106,7 @@ Liquid語言中以`{{ "{%  "}}%}`夾起來的部分通常有特別的用途，�
     # Hello, Jekyll!
 
     我的第一篇文章。
+
 
 現在Jekyll目錄結構應該長這樣:
 
@@ -108,4 +118,5 @@ Liquid語言中以`{{ "{%  "}}%}`夾起來的部分通常有特別的用途，�
 
 到現在為止博客的基本雛形就已經完成了，將版本庫推送上Github吧。
 
-
+[1]: https://github.com/mojombo/jekyll
+[2]: https://github.com/mojombo/jekyll/wiki/Configuration
