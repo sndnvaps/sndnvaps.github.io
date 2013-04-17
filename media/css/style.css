@@ -302,6 +302,7 @@ body.advisories #nav-advisories,body.community #nav-community,body.blog #nav-blo
 	text-align: left;
 	padding-left: 0;
 	padding-right: 0;
+	color: #444;
 }
 #main img {
 	max-width: 740px;
