@@ -24,7 +24,7 @@ Jekyll也不例外，是由這三種東西構成的。
 
 ## 設定
 
-要啟用Jekyll，第一步就是在目錄裡添加一個名為 `_config.yml` 的文件，_config.yml 是 Jekyll博客默認的配置文件。通常我們會在裡頭做 Jekyll博客的全站配置。
+要啟用Jekyll，第一步要在目錄裡創建一個名為 `_config.yml` 的文件，_config.yml 是 Jekyll默認的配置文件。通常我們會在裡頭做Jekyll博客的全站設定。
 
 給`_config.yml`文件填入以下內容:
 
@@ -32,7 +32,7 @@ Jekyll也不例外，是由這三種東西構成的。
     url: http://yourid.github.io/
     markdown: rdiscount
 
-文件的第一行我們給博客起了個名字 「我的博客」 (當然可以起其他名字，隨你高興)，第二行則是博客的網址 (記得把yourid換成你的Github帳號)，第三行則要求 Jekyll 編譯博客時採用對中文較友善的 RDiscount 解譯器。其他沒有寫出來的設置就是採默認值。完整的設置可以參考[官方文件][2]。
+文件的第一行我們給博客起了個名字 「我的博客」 (當然也可以起其他名字，隨你高興)，第二行則是博客的網址 (記得把yourid換成你的Github帳號)，第三行則要求 Jekyll 編譯博客時採用對中文較友善的 RDiscount 解譯器。其他沒有寫出來的設置就是採默認值。完整的設置可以參考[官方文件][2]。
 
 這種設置文件的寫法叫做YAML表示法，每項設置一行。需要注意的是 **冒號後面一定要跟著一個空格**，這是YAML的規矩，少了這個空格，編譯網站就會報錯。
 
@@ -78,7 +78,7 @@ index.html 就是個大家熟悉的典型的HTML文件。比較特殊的是 HTML
 {% for post in site.posts "}}%}
     // do something inside...
 {{ "{% endfor " }}%}
-{% endhighlight}
+{% endhighlight %}
 
 `{{ "{%  "}}%}` 夾起來的部分是 Liquid 排版語言的控制語句， for迴圈是其中一種。 我們用它在首頁循環印出每篇文章的標題`{{ "{{ post.title "}}}}`。
 
