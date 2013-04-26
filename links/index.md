@@ -4,3 +4,9 @@ layout: page
 comments: yes
 ---
 
+那些曾經影響我的看法、思考、程式設計的風格的人。
+
+* [fcamel's blog](http://fcamel-fc.blogspot.tw/) 自強不息的駱駝有草吃
+* [老赵点滴](http://blog.zhaojie.me/) 追求编程之美
+* [刘未鹏 | Mind Hacks](http://mindhacks.cn/)
+* [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
