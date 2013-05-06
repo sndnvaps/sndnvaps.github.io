@@ -121,7 +121,7 @@ a:hover     { color: #000; text-decoration: underline; }
 blockquote  { padding: 0 0 0 18px; margin-bottom: 18px; color: #666; border-left: solid 5px #999; }
 strong      { font-weight: bold; }
 em          { font-style: italic; }
-pre         { margin-bottom: 18px; background: #eee; border:1px solid #ddd; padding:16px; font-size:13px; line-height:1.3em; }
+pre         { margin-bottom: 18px; background: #DFD0AB; border:1px solid #BEB398; padding:16px; font-size:13px; line-height:1.3em; }
 
 /* Use this to create a horizontal ruler across a column. */
 hr {
@@ -273,7 +273,7 @@ body.advisories #nav-advisories,body.community #nav-community,body.blog #nav-blo
 #main h3 {
 	font-size: 1.4em;
 	font-weight: normal;
-	border-bottom: 4px solid #f7f7f7;
+	border-bottom: 1px dotted #724B38;
 	padding: 0 0 1px;
 	margin-bottom: 0.4em;
 }
