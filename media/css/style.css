@@ -115,8 +115,8 @@ ol          { list-style-type: decimal; }
 dl          { margin: 0 0 18px 0; }
 dl dt       { font-weight: bold; }
 
-a           { color: #724B38; text-decoration: none; outline: none; }
-a:hover     { color: #000; text-decoration: underline; }
+a           { color: #742600; text-decoration: none; outline: none; }
+a:hover     { color: #CA3636; text-decoration: underline; }
 
 blockquote  { padding: 0 0 0 18px; margin-bottom: 18px; color: #666; border-left: solid 5px #999; }
 strong      { font-weight: bold; }
