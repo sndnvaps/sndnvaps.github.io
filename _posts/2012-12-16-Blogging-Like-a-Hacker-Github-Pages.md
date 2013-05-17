@@ -6,7 +6,7 @@ tags: [Jekyll]
 published: true
 ---
 
-## 為什麼要用 Github Pages?
+### 為什麼要用 Github Pages? ###
 
 遇見Github Page之前我一直定居在 [Blogger上](http://chchwy.blogspot.tw/)，斷斷續續，不是很認真的寫了四年左右，除了些小缺點像貼碼的時候老跟我抱怨`<iostream>`不是合法的HTML標籤外，整體還算滿意Blogger的服務。畢竟放眼望去要找到比Blogger更好平台了也不容易。
 但是身為一個程式設計師，總想要對自己的Blog有更多、更多的控制權。念研究所的時候我曾經試著自己架設伺服器，不過養機器實在麻煩，離開學校之後博客該何去何從也沒個底，後來就不了了之。
@@ -34,7 +34,7 @@ Jekyll一開始就將整個網站編譯成靜態HTML頁面，所以不用資料�
 
 還有一點，Jekyll 的標語是 Blogging Like a Hacker，聽起來很帥。XD
 
-## 如何開始
+### 如何開始 ###
 
 我在網路上搜尋了很多Jekyll/Github Pages教學，大部分不是寫的雜亂無章，就是有所缺漏， 最後總算找到一篇條理清晰的教學
 「[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)」，只能說阮一峰，不意外。
