@@ -4,7 +4,7 @@ url: http://chchwy.github.io
 
 permalink: /:year/:month/:title.html
 
-author: Matt Chiawen Chang
+author: Matthew Chiawen Chang
 pygments: false
 
 markdown: redcarpet
