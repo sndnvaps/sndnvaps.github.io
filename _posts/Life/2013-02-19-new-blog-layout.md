@@ -2,7 +2,7 @@
 layout: post
 title: 換新版型
 categories: [生活]
-tag: [Blog]
+tags: [Blog]
 published: true
 ---
 
