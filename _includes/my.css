@@ -1,0 +1,8 @@
+/* li .listing {padding:.2em 0;} */
+/* ol,ul {list-style-position:inside;} */
+/* ol ul, ul ol, ul ul, ol ol {margin-left:1em;} */
+.listing-item {margin-left:0.5em;}
+.listing-item,.listing-seperator{list-style-type:none;}
+.listing-item a{padding:.2em 1em;}
+.listing-item time{color:#999999;}
+.listing-seperator{font-weight:bold;}
