@@ -2,8 +2,7 @@
 
 A personal blog :)
 
-#### About Theme
+#### About the Blog Theme
 
-* [Blog](http://muan.co)
-* [Email](mailto:hello@muan.co)
-* [Fork this repository](https://github.com/muan/jekyll-wardrobe/fork)
+* [Muan's Blog](http://muan.co)
+* [Repository](https://github.com/muan/jekyll-wardrobe/fork)
