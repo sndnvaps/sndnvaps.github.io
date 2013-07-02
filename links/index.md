@@ -1,7 +1,6 @@
 ---
 title: links
-layout: page
-comments: yes
+layout: default
 ---
 
 那些曾經影響我的看法、思考、程式設計的風格的人。
