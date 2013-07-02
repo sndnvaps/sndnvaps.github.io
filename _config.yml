@@ -33,7 +33,7 @@ links:
     url:          /about.html
   - name:         Blog
     url:          http://chchwy.github.io
-  - name:         Email
-    url:          mailto:chchwy(a)gmail(.)com
+  - name:         Links
+    url:          /links
   - name:         Projects
     url:          /projects.html
