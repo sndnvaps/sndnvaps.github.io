@@ -1,3 +1,26 @@
-<script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="/media/js/prettify.js"></script>
-<script type="text/javascript" src="/media/js/bitbucket.js"></script>
+<script type="text/javascript" src="/assets/prettify.js"></script>
+<script type="text/javascript">
+$(function() {
+    $("a.embed").each(function() {
+        var $link = $(this);
+
+        $.ajax({
+            url: $link.attr('href'),
+            dataType: 'jsonp',
+            error: function(xhr, status, error) {
+                alert(error);
+            },
+            success: function(response) {
+
+                var code = $('<pre>')
+                    .addClass('prettyprint')
+                    .text(response.data);
+
+                $link.replaceWith(code);
+                prettyPrint();
+            }
+        });
+    });
+});
+</script>
+<link href="/assets/prettify.css" rel="stylesheet" type="text/css">

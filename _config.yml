@@ -1,16 +1,39 @@
+title:            Matt
+description:      調和的靈感
+url:              http://chchwy.github.io/
+paginate:         10
 
-name: 調和的靈感 Mat
-url: http://chchwy.github.io
-
-permalink: /:year/:month/:title.html
-
-author: Matthew Chiawen Chang
-pygments: false
-
-markdown: redcarpet
-
-disqus_shortname: chchwy
-analytics: UA-5266256-5
+pygments:         false
+permalink:        /:year/:month/:title.html
+markdown:         redcarpet
+rdiscount:
+  extensions:     [smart]
 
 redcarpet:
   extensions: [tables, fenced_code_blocks]
+
+# Theme specific settings
+theme:            b
+signoff:          Mu-An
+facebook_appid:
+google_analytics: UA-5266256-5
+disqus_shortname: chchwy
+
+owner:
+  name:           Matt (chchwy)
+  avatar:         'https://secure.gravatar.com/avatar/49a872f505cf4d3d0435f4f96c8dcd64?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
+  bio:            'I design, code, make funny noises and live in London. I am very nice. Designer-dev looking for new opportunities, get in touch!'
+
+links:
+  - name:         Home
+    url:          /
+  - name:         Categories
+    url:          /categories.html
+  - name:         About
+    url:          /about.html
+  - name:         Blog
+    url:          http://chchwy.github.io
+  - name:         Email
+    url:          mailto:chchwy(a)gmail(.)com
+  - name:         GitHub
+    url:          http://github.com/chchwy

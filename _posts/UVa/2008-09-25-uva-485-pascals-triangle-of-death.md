@@ -4,6 +4,7 @@ published: true
 title: UVa 485 Pascal's Triangle of Death
 tags: [UVa Online Judge]
 categories: [程式解題]
+bitbucket: true
 ---
 
 印出帕斯卡三角形，直到任何一個數字超過10的60次方為止。

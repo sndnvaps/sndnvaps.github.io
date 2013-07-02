@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      {% if page.title %}
+        {% assign title = page.title|append: " - "|append:site.title %}
+        {% assign description = page.description %}
+      {% else %}
+        {% assign title = site.title %}
+        {% assign description = site.description %}
+      {% endif %}
+      <title>{{ title }}</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="{{ site.description }}">
 
-	<title>{{ site.name }}</title>
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/normalize.min.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/syntax.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/boilerplate.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/-global/css/basics.css">
+      <script src="{{ site.baseurl }}themes/-global/js/modernizr-2.6.2.min.js"></script>
+      <script src="{{ site.baseurl }}themes/-global/js/jquery-1.9.1.min.js"></script>
+      <script type='text/javascript'>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+          _gaq.push(['_trackPageview']);
 
-    <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+      </script>
 
-	<link href="/media/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/media/css/prettify.css" rel="stylesheet" type="text/css">
-    <link href="/media/css/autumn.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="container">
-    <div id="header" class="column first last span-20">
-        <h1 id="site-name" class="column first span-5 prepend-1 append-1">
-            <a href="/">{{ site.name }}</a>
-        </h1>
-        <div id="primary" class="column span-13 last">
+      <link rel="stylesheet" href="{{ site.baseurl }}themes/{{ site.theme }}/style.css">
+      <script src="{{ site.baseurl }}themes/{{ site.theme }}/custom.js"></script>
 
-            {% include nav.md %}
+      {% if page.bitbucket %}
+        {% include bitbucket.html %}
+      {% endif %}
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-        </div>
-        <div id="secondary" class="column span-18 append-1 prepend-1 first last">
+    <header>
+      <h1><a href="/" title="{{ site.title }}">{{ site.title }}</a></h1>
+      <p class="description">{{ site.description }}</p>
+      <nav>{% for link in site.links %}<a target="_top" href="{{ link.url }}">{{ link.name }}</a>{% endfor %}</nav>
+    </header>
+    <section class="content">{{ content }}</section>
+    <footer>
+      built with Jekyll using <a href="https://github.com/muan/jekyll-wardrobe">Wardrobe</a>
+    </footer>
 
-        </div>
-    </div>
-
-    <div id="main" class="column first last span-18 prepend-1 append-1">
-
-        {{ content }}
-
-    </div>
-</div>
-
-{% include analytics.html %}
-
-</body>
+  </body>
 </html>
