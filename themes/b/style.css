@@ -1,5 +1,6 @@
 body, h1, h2, h3, h4, h5 {
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+}
 
 body {
   background-image: -webkit-linear-gradient(-45deg, #dedade, #ededef, #ccdfee, #edefed);
@@ -11,7 +12,7 @@ body {
   background-repeat: no-repeat;
   padding: 20px;
   color: #404142;
-  font-size: 14px; }
+  font-size: 15px; }
   body > header, body .content, body footer {
     background: #fff;
     margin: 0 auto;
