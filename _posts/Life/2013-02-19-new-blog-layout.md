@@ -4,8 +4,12 @@ title: 換新版型
 categories: [生活]
 tags: [Blog]
 published: true
+date: 2013-07-04
 ---
 
-折騰Jekyll了一陣子後，發覺畢竟自己不是專業的前端工程師，換了幾次版型但都不是很滿意，實在是力有未逮阿，最後決定拿別人的版型來修改，現在的版型是以[OAuth2](http://oauth.net/2/)為基礎下去修改的，稍微改變配色，加大了字體。
+折騰Jekyll一陣子後，發覺自己不是專業的前端工程師，雖說花時間努力的做了幾個版型，但都不甚滿意。最後決定以別人做好的版型為基礎來做微調，現在的版型是以[Jekyll-Wardrobe][1] (作者[Muan][2]的博客) 為基礎下去改的。
 
-現在的版面很清爽，不刺眼，我很喜歡。
+版面很清爽，我很喜歡。
+
+[1]: https://github.com/muan/jekyll-wardrobe "Jekyll-wardrobe"
+[2]: http://muan.co/ "Muan.co"
