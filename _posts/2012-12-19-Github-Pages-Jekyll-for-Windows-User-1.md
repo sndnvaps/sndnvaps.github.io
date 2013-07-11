@@ -7,11 +7,12 @@ date: 2013-01-05
 published: true
 ---
 
+您現在正在瀏覽的這個博客就是架在Github Pages上，用的是Jekyll這個博客系統。
+
 本篇是我自己從零開始建立 Github Pages 獨立博客的經驗，現在我更新博客也都是走這個流程。
 順帶一提，我自己用的是 Windows，所以本文對象是 Windows 用戶。
 
-要走完本篇教學需要具備的能力只有一個，
-就是用文字編輯器手動修改 HTML/CSS 的能力，
+要走完本篇教學需要具備的能力只有一個 -- 就是用文字編輯器手動修改 HTML/CSS 的能力，
 不需要很厲害，但是基本了解是必須的。
 
 ### 第一步，申請Github帳號 ###
@@ -20,7 +21,7 @@ published: true
 
 ### 第二步，安裝Github for Windows的客戶端程式 ###
 
-Github Pages的更新與上傳都要透過git，這是第一個需要跨過的門檻。因為git並不容易學習。
+Github Pages透過git這套版本控制系統上傳，這是第一個需要跨過的門檻。
 
 好在 Github 很貼心的為不擅長命令列操作的Windows使用者開發了這個工具 「Github for Windows」， 很大程度的降低了在Windows平台上使用git的門檻。
 像我自己這種一招半式闖江湖，只會一些簡單git命令的人，有這個工具幫助真是再好不過了。
