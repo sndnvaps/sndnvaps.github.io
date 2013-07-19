@@ -4,14 +4,16 @@ layout: default
 
   <ul class="posts categories">
   {% for category in site.categories %}
-    <h3 class="muted">{{ category[0] }} ({{ category[1].size }}) </h3>
+    <h2 class="muted">{{ category[0] }} ({{ category[1].size }}) </h2>
+    
     {% for post in category[1] %}
       <li>
         <a href="{{ post.url }}">
-          <h3 class="post-title">{{ post.title }}</h3>
+          {{ post.title }}
           <time class="inline">{{ post.date | date_to_string }}</time>
         </a>
       </li>
     {% endfor %}
+    
   {% endfor %}
   </ul>
