@@ -1,8 +1,5 @@
-### chchwy.github.com
+### chchwy.github.io
 
-A personal blog :)
+Welcome to my personal blog: [chchwy.github.io](http://chchwy.github.io). :)
 
-#### About the Blog Theme
-
-* [Muan's Blog](http://muan.co)
-* [Repository](https://github.com/muan/jekyll-wardrobe/fork)
+> [Blog Theme](https://github.com/muan/jekyll-wardrobe/fork) is powered by [Muan](http://muan.co)
