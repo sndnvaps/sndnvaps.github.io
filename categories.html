@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: page
 ---
 
   <ul class="posts categories">
+
   {% for category in site.categories %}
-    <h2 class="muted">{{ category[0] }} ({{ category[1].size }}) </h2>
-    
+    <h3 class="muted">{{ category[0] }} ({{ category[1].size }}) </h3>
+
     {% for post in category[1] %}
       <li>
         <a href="{{ post.url }}">
@@ -14,6 +15,7 @@ layout: default
         </a>
       </li>
     {% endfor %}
-    
+
   {% endfor %}
+
   </ul>

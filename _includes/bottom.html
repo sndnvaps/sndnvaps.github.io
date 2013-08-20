@@ -1,0 +1,44 @@
+  <div class="row triple-row">
+    <div id="triple-first" class="span4 triple">
+        <div class="zone zone-triple-first">
+        <article class="widget-triple-first widget-html-widget widget">
+            <header>
+                <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">
+                    <h1>{{ page.previous.title }}</h1>
+                </a>
+            </header>
+            <p> {{ page.previous.excerpt|strip_html }} </p>
+        </article>
+      </div>
+    </div>
+
+    <div id="triple-second" class="span4 triple">
+        <div class="zone zone-triple-second">
+        <article class="widget-triple-second widget-html-widget widget">
+
+            <header>
+                <a href="{{ page.next.url }}" title="{{ page.next.title }}">
+                <h1>{{ page.next.title }}</h1>
+                </a>
+            </header>
+            <p> {{ page.next.excerpt|strip_html }} </p>
+        </article>
+      </div>
+    </div>
+
+    <div id="triple-third" class="span4 triple">
+        <div class="zone zone-triple-third">
+        <article class="widget-triple-third widget-html-widget widget">
+            <header>
+                <h1>Share &amp; Connect</h1>
+            </header>
+            <p>
+            <a href="/feed.xml"><i class="smicon-rss"></i></a>
+            <a href="http://twitter.com/chchwy"><i class="smicon-twitter"></i></a>
+            <a href="https://plus.google.com/101343199233687111360"><i class="smicon-google"></i></a>
+            <a href="https://github.com/chchwy"><i class="smicon-github"></i></a>
+            </p>
+        </article>
+      </div>
+    </div>
+  </div>

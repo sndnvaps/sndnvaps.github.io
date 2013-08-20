@@ -1,26 +1,17 @@
 ---
-layout: default
+layout: page
 ---
 
-<ul class="posts">
-  {% for post in paginator.posts %}
-    <li>
-      <a href="{{ post.url }}">
-        <h3 class="post-title">{{ post.title }}</h3>
-        <time>{{ post.date | date_to_string }}</time>
+<ul class="posts" style="list-style-type: none;">
+  {% for post in site.posts %}
+    <li style="line-height: 2em;">
+      <a href="{{ post.url }}" style="text-decoration: none;">
+
+        » {{ post.title }}
+        <time style="float: right; color: #aaa;">
+          {{ post.date | date_to_string }}
+        </time>
       </a>
     </li>
   {% endfor %}
 </ul>
-{% unless paginator.total_pages == 1 %}
-<section class="pagination">
-  <a href="/{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}">Previous</a>
-  {{ paginator.page }} of {{ paginator.total_pages }}
-  <a href="/{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">Next</a>
-</section>
-{% endunless %}
-<aside>
-  <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" />
-  <strong>{{ site.owner.name }}</strong>
-  <p>{{ site.owner.bio }}</p>
-</aside>
