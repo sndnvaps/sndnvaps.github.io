@@ -4,7 +4,7 @@ title: "Github Pages & Jekyll攻略 - 給Windows使用者 (上)"
 categories: [ 技術筆記 ]
 tags: [Jekyll]
 date: 2013-01-05
-published: true
+published: false
 ---
 
 您現在正在瀏覽的這個博客就是架在Github Pages上，用的是Jekyll這個博客系統。
