@@ -3,7 +3,7 @@ layout: post
 title: "Github Pages & Jekyll攻略 - 給Windows使用者 (下)"
 categories: 技術筆記
 tags: Jekyll
-published: true
+published: false
 ---
 
 開始之前，請確定您已經可以用[上一篇]({{ site.url }}/2012/12/Github-Pages-Jekyll-for-Windows-Lasy-User-1.html)的方式，準備好一個 git 版本庫並且與Github同步。
