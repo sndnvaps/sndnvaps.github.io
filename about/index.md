@@ -28,9 +28,10 @@ Hi，我是Matt (chchwy)，3D軟體工程師，現居台北。
 ## 開源項目
 
 我現在是開源軟體 [Pencil2D][0] 的主力開發者。
-Pencil2D是一款非常有趣的2D動畫軟體，它讓我回想起小時候畫在筆記本上的小動畫。隨著紙頁快速翻過，人物就好像活過來一樣。
+Pencil2D是一款非常有趣的2D動畫軟體，它讓你回想起小時候畫在筆記本上的小動畫。隨著紙頁快速翻過，人物就會好像活過來一樣。
 
-Pencil2D 支持Windows, Mac OS X 與 Linux。
+Pencil2D是跨平台軟體，支持Windows, Mac OS X 與 Linux。
+現在只有一個很小的開發團隊，如果您有C++/Qt基礎，歡迎加入我們。
 
 
 [0]: http://pencil2d.org "Pencil2D"
