@@ -3,7 +3,15 @@ layout: page
 ---
 
 <ul class="posts" style="list-style-type: none;">
+
   {% for post in site.posts %}
+
+    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+    {% if year != y %}
+      {% assign year = y %}
+      <li class="listing-seperator" style="color: #855; font-weight: bold;">{{ y }}</li>
+    {% endif %}
+
     <li style="line-height: 2em;">
       <a href="{{ post.url }}" style="text-decoration: none; font-family: 'PT Serif' '微軟正黑體' serif;">
 
