@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: wide
 title: UVa 102 Ecological Bin Packing
 tags: [UVa Online Judge]
 categories: [程式解題]
