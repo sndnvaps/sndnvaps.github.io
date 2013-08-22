@@ -15,10 +15,11 @@ OpenGL應用程式為了假裝出鏡頭移動的樣子，必須移動場景，�
 
 ### 8.020 我要如何移動場景裡的眼睛或者鏡頭呢?
 
-以OpenGL鏡頭模型來說，OpenGL沒有提供介面去做這件事情。然而，GLU庫提供了gluLookAt()函數，傳入眼睛的本身位置，眼睛瞄準點位置，以及指上向量(up vector)，都基於世界空間坐標。
+以OpenGL鏡頭模型來說，OpenGL沒有提供介面去做這件事情。然而，GLU庫提供了gluLookAt()函數，
+傳入眼睛的本身位置，眼睛瞄準點位置，以及指上向量(up vector)，都基於世界空間坐標。
 這個函數依據參數計算出正確的相機逆空間轉換矩陣，並且乘上目前的矩陣。
 
-### 8.030 我的相機鏡頭應該放在 ModelView 矩陣還是 Projection矩陣?</h3>
+### 8.030 我的相機鏡頭應該放在 ModelView 矩陣還是 Projection矩陣?
 
 GL_PROJECTION 矩陣只應該包含投影變換，它將眼空間坐標(eye space coordinates)轉換到裁切坐標(clip coordinates)。
 
