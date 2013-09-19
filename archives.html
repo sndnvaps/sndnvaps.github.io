@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<ul class="post-list" style="list-style-type: none; padding-left: 0;">
+<ul class="post-list" style="padding-left: 0;">
 
   {% for post in site.posts %}
 
@@ -14,7 +14,7 @@ layout: default
 
     <li style="line-height: 2em;">
       <time style="color: #aaa;">
-          {{ post.date | date:"%b %d" }}
+          {{ post.date | date_to_string }}
       </time>
       <a href="{{ post.url }}" style="text-decoration: none; font-family: 'PT Serif' '微軟正黑體' serif;">
         » {{ post.title }}
