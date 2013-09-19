@@ -9,7 +9,7 @@ layout: default
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
     {% if year != y %}
       {% assign year = y %}
-      <li class="listing-seperator" style="">- {{ y }} -</li>
+      <li class="listing-seperator" style="list-style-type:none;">- {{ y }} -</li>
     {% endif %}
 
     <li style="line-height: 2em;">
