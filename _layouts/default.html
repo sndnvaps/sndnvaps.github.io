@@ -1,70 +1,41 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>調和的靈感 - Matt</title>
-
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matthew chchwy Chang">
+  <meta name="author" content="Matthew chchwy Chang">
 
-  <!-- Google Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One|PT+Serif|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
 
-  <!-- Stylesheets -->
+  <title>調和的靈感</title>
+
+  <!-- Bootstrap core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-  <link href="/css/socialicons.css" rel="stylesheet">
-  <link href="/css/glyphicons.css" rel="stylesheet">
-  <link href="/css/halflings.css" rel="stylesheet">
-  <link href="/css/template.css" rel="stylesheet">
-  <link href="/css/colors/color-classic.css" rel="stylesheet" id="colorcss">
+  <link href="/css/prettify.css">
 
-  <!-- Modernizr for Glyphicons (SVG) -->
-  <script src="/js/modernizr.js"></script>
-
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-  <link href="/assets/prettify.css" rel="stylesheet">
   {% include mycss.html %}
 
+  <style>
+
+  </style>
 </head>
 <body>
+  <div class="container">
+    <br/>
 
-<div class="container">
+    <h1 class="site-title"><a href="/index.html">調和的靈感</a></h1>
 
-  {% include nav.html %}
+    {% include nav.html %}
 
-  <hr>
-
-    {{ content }}
-
-  <hr>
-
-{% if page.title %}
-  {% include bottom.html %}
-  <hr>
-{% endif %}
-
-
-  <div class="row">
-
-    <div class="copyright span12">Copyright 2013 - Made in Switzerland</div>
+    <div>
+      {{ content }}
+    </div>
   </div>
 
-</div>  <!-- End Container -->
-
-<!-- Javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery-1.9.1.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/tinynav.js"></script>
-<script src="/js/template.js"></script>
-<script src="/assets/prettify.js"></script>
-<script src="/assets/bitbucket.js"></script>
+  <script src="/js/jquery-1.9.1.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/prettify.js"></script>
+  <script src="/js/bitbucket.js"></script>
 </body>
 </html>

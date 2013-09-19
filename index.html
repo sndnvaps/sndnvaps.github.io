@@ -1,25 +1,41 @@
 ---
-layout: page
+layout: default
 ---
 
-<ul class="posts" style="list-style-type: none;">
+<div style="margin-bottom: 2em;">
+  {% for post in site.posts limit: 1 %}
 
-  {% for post in site.posts %}
+  <section>
+  <time class="text-muted">{{ post.date | date_to_string }}</time>
+  <h3>
+    <a href="{{ first_post.url }}" style="color:#000;">
+    {{ post.title }}
+    </a>
+  </h3>
+  {{ post.content | strip_html | truncatewords: 8 }}
+  <br/>
+  <a href="{{ first_post.link }}">(繼續閱讀全文..)</a>
+  </section>
 
-    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-    {% if year != y %}
-      {% assign year = y %}
-      <li class="listing-seperator" style="color: #855; font-weight: bold;">{{ y }}</li>
-    {% endif %}
+  {% endfor %}
+</div>
+
+<h4 class="text-muted">最近文章</h4>
+<ul class="post-list" style="list-style-type: none; padding-left: 0;">
+
+  {% for post in site.posts limit: 10 %}
 
     <li style="line-height: 2em;">
-      <a href="{{ post.url }}" style="text-decoration: none; font-family: 'PT Serif' '微軟正黑體' serif;">
-
-        » {{ post.title }}
-        <time style="float: right; color: #aaa;">
+      <time style="color: #aaa;">
           {{ post.date | date_to_string }}
-        </time>
+      </time>
+      <a href="{{ post.url }}" style="text-decoration: none; font-family: 'PT Serif' '微軟正黑體' serif;">
+        » {{ post.title }}
       </a>
     </li>
   {% endfor %}
 </ul>
+
+<div class="well">
+  <img src="" width="100" height="100" />
+</div>
