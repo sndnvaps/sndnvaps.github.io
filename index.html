@@ -8,7 +8,7 @@ layout: default
   <article style="margin-bottom: 40px;">
     <time class="text-muted" style="font-size:13px;">{{ post.date | date_to_string }}</time>
     <h3>
-      <a href="{{ post.url }}" style="color:#000;">
+      <a href="{{ post.url }}" style="">
       {{ post.title }}
       <span class="text-muted">→</span>
       </a>
@@ -16,7 +16,7 @@ layout: default
     </h3>
     {{ post.content | strip_html | truncate: 120 }}
     <br/>
-    <!-- <a href="{{ first_post.link }}">(繼續閱讀全文..)</a> -->
+
   </article>
 
   {% endfor %}
