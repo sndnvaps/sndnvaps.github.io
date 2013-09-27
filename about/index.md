@@ -1,6 +1,6 @@
 ---
 title: About me
-layout: narrow
+layout: page
 comments: yes
 ---
 

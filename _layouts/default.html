@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Matthew chchwy Chang">
+  <meta name="description" content="Matthew's Blog">
   <meta name="author" content="Matthew chchwy Chang">
 
   <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
@@ -16,24 +16,34 @@
 
   {% include mycss.html %}
 
-  <style>
+  <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
 
-  </style>
 </head>
 <body>
-  <div class="container">
-    <br/>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title pull-left"><a href="/index.html">調和的靈感</a></h1>
 
-    <h1 class="site-title"><a href="/index.html">調和的靈感</a></h1>
+      {% include nav.html %}
+    </div>
+  </header>
 
-    {% include nav.html %}
-
-    <div>
+  <div class="container site-container">
       {{ content }}
+  </div>
+
+  <div class="container">
+    <div class="footer" style="border-top: solid 1px #aaa; padding:20px 0;">
+      <div class="pull-right">
+      Powered by
+      <a href="http://jekyllrb.com/">Jekyll</a>,
+      <a href="http://getbootstrap.com/">Bootstrap</a>,
+      <a href="http://glyphicons.com/">Glyphicons</a>.
+      </div>
     </div>
   </div>
 
-  <script src="/js/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/prettify.js"></script>
   <script src="/js/bitbucket.js"></script>

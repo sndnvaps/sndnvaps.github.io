@@ -2,22 +2,22 @@
 layout: default
 ---
 
-<div style="margin-bottom: 2em;">
+<div class="index-post-list">
   {% for post in site.posts limit: 5 %}
 
-  <section>
-  <time class="text-muted">{{ post.date | date_to_string }}</time>
-  <h3>
-    <a href="{{ post.url }}" style="color:#000;">
-    {{ post.title }}
-    </a>
-  </h3>
-  {{ post.content | strip_html | truncatewords: 5 }}
-  <br/>
-  <a href="{{ first_post.link }}">(繼續閱讀全文..)</a>
-  </section>
+  <article style="margin-bottom: 40px;">
+    <time class="text-muted" style="font-size:13px;">{{ post.date | date_to_string }}</time>
+    <h3>
+      <a href="{{ post.url }}" style="color:#000;">
+      {{ post.title }}
+      <span class="text-muted">→</span>
+      </a>
 
-  <div style="border-bottom: dashed 1px #ccc; margin:2em 0;"></div>
+    </h3>
+    {{ post.content | strip_html | truncate: 120 }}
+    <br/>
+    <!-- <a href="{{ first_post.link }}">(繼續閱讀全文..)</a> -->
+  </article>
 
   {% endfor %}
 </div>
