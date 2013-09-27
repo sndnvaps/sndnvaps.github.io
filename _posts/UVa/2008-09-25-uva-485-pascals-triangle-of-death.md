@@ -1,8 +1,11 @@
 ---
-layout: wide
-title: UVa 485 Pascal's Triangle of Death
-tags: [UVa Online Judge]
-categories: [程式解題]
+layout: post
+title: "UVa 485 Pascal's Triangle of Death"
+tags: 
+  - UVa Online Judge
+categories: 
+  - 程式解題
+published: true
 ---
 
 打印帕斯卡三角形，直到其中一個數字超過10的60次方為止。
