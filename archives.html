@@ -13,8 +13,8 @@ layout: default
     {% endif %}
 
     <li style="line-height: 2em;">
-      <time style="color: #aaa;">
-          {{ post.date | date_to_string }}
+      <time>
+          {{ post.date | date: "%b %d" }}
       </time>
       <a href="{{ post.url }}" style="text-decoration: none; font-family: 'PT Serif' '微軟正黑體' serif;">
         » {{ post.title }}
