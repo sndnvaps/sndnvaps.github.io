@@ -1,6 +1,8 @@
 ---
 layout: default
+published: true
 ---
+
 <!--
 <a class="category">{{ page.category }}</a>
 <time><span>Published on </span>{{ page.date | date_to_string }}</time>
@@ -16,8 +18,8 @@ layout: default
 
       </div>
 
-      <footer>
-        Tags: {{ page.tags }}
+      <footer style="margin-top: 30px;">
+        Tags: <span class="text-muted">{{ page.tags }}</span>
       </footer>
     </article>
 
@@ -25,7 +27,3 @@ layout: default
 
     {% include disqus.html %}
 </div>
-
-
-
-
