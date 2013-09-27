@@ -6,7 +6,6 @@ categories:
 tags: 
   - Blog
 published: true
-date: {}
 ---
 
 又更新了一次Jekyll主題。我一直希望我的Blog閱讀起來可以很舒服，簡潔，字大，沒有刺眼的白底。
