@@ -1,45 +1,57 @@
 ---
 layout: post
-title: Windows上運行Jekyll的方法
-categories: [技術筆記]
-tags: [Jekyll]
+title: Windows 本地運行 Jekyll 的方法
+categories: 
+  - 技術筆記
+tags: 
+  - Jekyll
 published: true
 ---
 
-調整 Blog 版面的時候，我發覺每次都要把修改的內容推上 Github 後才能看見頁面效果，實在太慢了，畢竟有時候只是微調頁面，很想要趕快看到效果，實在沒耐心等上幾分鐘，便打算自己的電腦上安裝 Jekyll ，沒想到安裝過程比我想像的還要麻煩。
+(2013-09-27更新)
 
-聽說現在世界領頭搞 Web 技術的那一群人，機子不是 Mac 就是 Linux，
-連XDite寫的Rails 101教學書裡也說要學好Rails的第一步就該先準備好一台Mac電腦，Windows，可以吃嗎？
-Windows在這些新技術領域裡就跟次等公民沒什麼兩樣。
+玩了一陣子Jekyll後，我發覺調整 Blog 版面的速度很慢，因為我每次做了點修改(即使只是很小的修改)，也都要先把修改推上 Github ，並等上一兩分鐘才能看見頁面結果，這個循環的速度實在太慢了，讓人不爽
+。讓我興起了在自己的電腦上安裝運行 Jekyll 的念頭。
 
-牢騷發完了，以下是我折騰了一下午後終於能順利在本機編譯網站的步驟：
+沒想到折騰了一下午後，發現整個過程比我想像的還要麻煩多了，運行環境對 Windows 也不是很友善。不過總之還是搞定了，以下是我終於能順利在本機編譯 Jekyll 網站的步驟，給自己做個紀錄也分享給大家：
 
-### 安裝 Jekyll 的步驟
+### 配置 Ruby
 
-1. 因為Jekyll是用 Ruby 寫的，所以第一步就是安裝 [Ruby](http://rubyinstaller.org/downloads/)，我安裝的版本是Ruby 1.9.3。
-2. 運行Jekyll需要[Ruby Development Kit](http://rubyinstaller.org/downloads/)，下載Development Kit並解壓縮後，在目錄裡輸入以下兩條命令來設置DevKit:
+Jekyll 這套系統是用 Ruby 語言寫的，所以第一步要安裝 [Ruby][0] ，我安裝的版本是 Ruby 1.9.3。
+
+再來 Jekyll 需要 [Ruby Development Kit][1]，在同個下載頁的下方可以找到對應的版本。
+Development Kit 的配置方法比較特別，解壓縮後，要在該目錄下用命令列輸入以下兩條命令來配置:
 
 ~~~
 ruby dk.rb init
 ruby dk.rb install
 ~~~
 
-3. 接下來，就可以正式安裝Jekyll了，在命令列下輸入 `gem install jekyll`
-4. 安裝完後，因為Windows的編碼問題，需要把Jekyll下的convertible.rb 第29行改為，
+### 安裝 Jekyll
+
+接下來就可以正式安裝 Jekyll 了，打開命令列輸入 `gem install jekyll`
+
+`gem` 是 Ruby 語言的套件管理器，透過 gem 來安裝是最簡便，也是官方推薦的作法。安裝過程中有些編譯工作要進行，所以請確定你的電腦上有 `make` 和 `gcc` 。
+
+### 中文問題
+
+首先一個 Jekyll 的大坑「中文檔名」，絕對不要去踩。因為 Windows 的檔名編碼不是 UTF-8 ，只要目錄內有中文檔名那網站一定會編譯失敗。有趣的是 Jekyll 在 Mac 和 Linux 下使用中文檔名是沒有問題的， Github 上有中文檔名的文章也可以正確顯示。唯一會出岔子的就是 Windows 本地編譯，這個問題目前無解，只能避開。
+
+記得將文件存為 UTF-8 編碼無 BOM。文件內容可以使用中文，中文文章標題也沒問題。少用tab字元，盡量用空白符。找個靠譜的文字編輯器如 Notepad++ 可以省去許多力氣。
+
+最後建置 Jekyll 網站之前，需要改變命令列的編碼，詳細如下: 
 
 ~~~
- - self.content = File.read(File.join(base, name))
- + self.content = File.read(File.join(base, name), :encoding => "utf-8")
+set LC_ALL=en_US.UTF-8
+set LANG=en_US.UTF-8
+jekyll serve --watch --trace
 ~~~
-檔案位置：C:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-0.12.0\lib\jekyll\convertible.rb
 
-5. 到此為止Jekyll就算基本安裝完成了，但是Jekyll默認的Markdown解譯器是Maruku，中文支援非常的差，建議用另一套解譯器RDiscount，安裝方法： `gem install rdiscount`  (需要make)
-6. 在你的Jekyll目錄下輸入 `jekyll --server --auto --rdiscount` 來編譯網站並且開啟本地伺服器。
-7. 瀏覽器打開 `http://localhost:4000` ，大功告成。
+頭兩行改編碼，最後一行呼叫 jekyll 命令進行編譯，詳細解釋可以參考[官方文檔][2]。我一般會將這三行命令寫成一個.bat檔，只要滑鼠雙擊就可以編譯並啟動本地伺服器。
+
+最後瀏覽器打開 `http://localhost:4000` 就可以看編譯結果啦，恭喜。
 
 
-### 參考連結
-
-- [JekyllBootstrap: Jekyll Introduction](http://jekyllbootstrap.com/lessons/jekyll-introduction.html)
-- [Running Jekyll on Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html)
-- [How to Use Github Pages on Windows](http://bradleygrainger.com/2011/09/07/how-to-use-github-pages-on-windows.html)
+[0]: http://rubyinstaller.org/downloads/ "Ruby Installer"
+[1]: http://rubyinstaller.org/downloads/ "Ruby development kit"
+[2]: "http://jekyllrb.com/docs/usage/" "Jekyll Usage"
