@@ -21,7 +21,7 @@ Hi，我是Matt (chchwy)，軟體工程師，現居台北。
 
 ## 關注我
 
-* [Github](http://github.com/chchwy) | [Bitbucket](http://bitbucket.org/chchwy)
+* [Github](http://github.com/chchwy)
 * [Plurk](http://www.plurk.com/chchwy) | [Twitter](http://twitter.com/chchwy)
 * [Anobii](http://www.anobii.com/chchwy) | [豆瓣讀書](http://book.douban.com/people/65684654/)
 
