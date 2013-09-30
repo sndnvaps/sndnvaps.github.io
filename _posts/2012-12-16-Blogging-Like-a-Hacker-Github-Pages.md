@@ -1,24 +1,27 @@
 ---
 layout: post
-title: 博客當如駭客 - Github Pages & Jekyll
-categories: [技術筆記]
-tags: [Jekyll]
+title: "博客當如駭客 - Github Pages & Jekyll"
+categories: 
+  - 技術筆記
+tags: 
+  - Jekyll
 published: true
 ---
 
 ### 為什麼要用 Github Pages? ###
 
-遇見Github Page之前我一直定居在 [Blogger上](http://chchwy.blogspot.tw/)，斷斷續續，不是很認真的寫了四年左右，除了些小缺點像貼碼的時候老跟我抱怨`<iostream>`不是合法的HTML標籤外，整體還算滿意Blogger的服務。畢竟放眼望去要找到比Blogger更好平台了也不容易。
-但是身為一個程式設計師，總想要對自己的Blog有更多、更多的控制權。念研究所的時候我曾經試著自己架設伺服器，不過養機器實在麻煩，離開學校之後博客該何去何從也沒個底，後來就不了了之。
+遇見Github Page之前我定居在 [Blogger]()，斷斷續續不是很認真的寫了四年左右的博客，除了一些小缺點，像貼程式碼時老是跟我抱怨`<iostream>`不是合法的 HTML 標籤外，還算滿意 Blogger 的服務。畢竟要找到比 Blogger 更好的平台也不容易。
 
-所以當我看見[Github Pages](http://pages.github.com/)時眼睛一亮，馬上就發覺這就是我想要的博客系統:
+但是身為一個程式設計師，總想要對自己的Blog有更多、更多的控制權。我曾經試著自己架設伺服器，不過養機器實在太過麻煩，離開學校之後博客該何去何從也沒個底，就不了了之。
+
+所以當我看見 [Github Pages](http://pages.github.com/) 時眼睛一亮，馬上就發覺這就是我想要的博客系統:
 
 ![Flickr from http://www.flickr.com/photos/39553261@N08/](http://farm4.staticflickr.com/3035/4059882973_f5f33b1eff.jpg)
 
-首先，Github Pages 給予我完全控制頁面的權力，而且省卻了管理主機的麻煩。
+首先，Github Pages 給予我完全控制頁面的權力，省卻了管理主機的麻煩。
 Github本身作為全球性的代碼託管服務商，不需要擔心服務品質。
 
-不同於其他的博客系統，後端總要有一套PHP+MySQL之類的運行環境即時運算頁面，
+不同於其他的博客系統，後端總要有一套 PHP+MySQL 之類的運行環境即時運算頁面，
 Github Pages後端採用了一個叫作[Jekyll](https://github.com/mojombo/jekyll)的靜態網站產生器。
 Jekyll一開始就將整個網站編譯成靜態HTML頁面，所以不用資料庫，也不用後端語言，對於網路空間的要求極低。
 博客這類好幾天才會更新一篇的網站，靜態編譯再適合不過了。
@@ -42,3 +45,4 @@ Jekyll一開始就將整個網站編譯成靜態HTML頁面，所以不用資料�
 
 只要有網頁知識，自己撰寫過HTML/CSS的經驗，那麼可以來試試看Jekyll :D。
 
+[0]: http://chchwy.blogspot.tw/ "Blogger 調和的靈感"
