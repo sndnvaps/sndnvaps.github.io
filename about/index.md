@@ -9,20 +9,18 @@ published: true
 
 ## 我是誰
 
-Hi，我是Matt (chchwy)，軟體工程師，現居台北。歡迎來到我BLOG，這裡記錄著我的思考、讀書心得、技術筆記和ACM解題心得。
+Hi，我是dnv aps (laser杨万荣)，搞机爱好者，Linux爱好者,Android爱好者，現居广州。欢迎来我的BLOG，这里记录我的思考，Linux的使用技巧,Android使用经验。
 
-## 關注我
+## 关注我
 
-* [Github](http://github.com/chchwy)
-* [Plurk](http://www.plurk.com/chchwy) | [Twitter](http://twitter.com/chchwy)
-* [Anobii](http://www.anobii.com/chchwy) | [豆瓣讀書](http://book.douban.com/people/65684654/)
+* [Github](http://github.com/sndnvaps)
+* [Weibo](http://weibo.com/210124187)
 
-## 開源項目
+## 开源项目
 
-我現在是開源軟體 [Pencil2D][0] 的主力開發者。 Pencil2D是一款非常有趣的2D動畫軟體，它讓你回想起小時候畫在筆記本上的小動畫。 隨著紙頁快速翻過，人物就會好像活過來一樣。
+我现在是开源软件[Miui Recovery][0]的主力开发者。Miui Recovery是一个第三方的 Android Recovery Mode，基于Aromafm源代码进行修改。功能比Clockwork Mod,能与twrp进行比拼。
 
-Pencil2D是跨平台軟體，支持Windows, Mac OS X 與 Linux。
-現在只有一個很小的開發團隊，如果您有C++/Qt基礎，歡迎加入我們。
+Miui Recovery是一个开源的Recovery Mod，我希望更多的开发者参与进来。让它能支持所有的手机。
 
 
-[0]: http://pencil2d.org "Pencil2D"
+[0]: http://github.com/sndnvaps/miui_recovery "Miui Recovery"
