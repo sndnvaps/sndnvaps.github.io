@@ -1,6 +1,6 @@
-title:            Matt
-description:      調和的靈感
-url:              http://chchwy.github.io/
+title:            dnv aps sn
+description:      laser杨万荣
+url:              http://sndnvaps.github.io/
 paginate:         10
 
 pygments:         false
@@ -13,10 +13,10 @@ redcarpet:
   extensions: [tables, fenced_code_blocks]
 
 # Theme specific settings
-google_analytics: UA-5266256-5
-disqus_shortname: chchwy
+#google_analytics: UA-5266256-5
+#disqus_shortname: chchwy
 
 owner:
-  name:           Matt (chchwy)
-  avatar:         'https://secure.gravatar.com/avatar/49a872f505cf4d3d0435f4f96c8dcd64?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
-  bio:            "Hi, I'm Matt, aka chchwy. I came, I saw, I coded."
+  name:           dnv aps (dnv aps sn)
+  avatar:         'http://images.cnitblog.com/blog/410522/201305/07211949-2f93270a57f945c1a8475ea9519d43e4.jpg'
+  bio:            "Hi, I'm dnv aps sn, aka dnv aps . I came, I saw, I coded."

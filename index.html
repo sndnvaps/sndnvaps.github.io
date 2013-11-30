@@ -4,7 +4,25 @@ published: true
 ---
 
 <div class="index-post-list">
-    <p>
-        請前往 <a href="http://chchwy.logdown.com/">http://chchwy.logdown.com/</a>
-    </p>
+  {% for post in site.posts limit: 5 %}
+
+  <article style="margin-bottom: 40px;">
+    <time class="text-muted" style="font-size:13px;">{{ post.date | date_to_string }}</time>
+    <h3>
+      <a href="{{ post.url }}" style="">
+      {{ post.title }}
+      <span class="text-muted">→</span>
+      </a>
+
+    </h3>
+    {{ post.content | strip_html | truncate: 120 }}
+    <br/>
+
+  </article>
+
+  {% endfor %}
+  
+  <p>
+    <a href="/archives.html">[列出全部文章..]</a>
+  </p>
 </div>
