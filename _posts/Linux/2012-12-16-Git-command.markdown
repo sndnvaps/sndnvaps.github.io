@@ -22,14 +22,18 @@ exerpt: |-
  git push origin :test     #删除远程的test分支
  git push origin test:master #提交本地的test分支做为远程的master分支
  git fetch  origin master #从远程的master分支下载最新的版本到本地，但是不会自动merge(合并）
+
+ git fetch origin master:remote-branch # 把远程的master分支下载到本地的remote-branch分支，这个remote-branch 分支会被自动创建，不存在的时候
+ git diff remote-branch #比较现在所处的分，跟remote-branch分支有什么差别
+ git merge --no-ff remote-branch #把remote-branch分支合并到现在的分支上面，如果没有冲突，会自动完成合并。当出现冲突的时候，需要手动修改conflict ,再提交commit
+
  git log -p master ../origin/master #比较本地的master分支和origin/master分支的差别
  git merge origin/master #合并分支
- git fetch origin master:tmp #从远程下载最新的版本到tmp分支
- git diff tmp #比较tmp分支和当前活动的分支（默认主分支为master)
- git diff tmp > 0001.patch #比较tmp分支和活动分支的差别，并生成patch文件
- git merge tmp #合并分支到/origin/master
+
+ 
  git pull origin master #相当于从远程获取最新的版本并merge(合并）到本地的master分支，相当于git fetch和git merge 
  git checkout branch-name #可以切换分支和检出分支
+ git checkout -b new_branch base_branch_name #基于base_branch_name分支一个名为new_branch的分支
  git checkout --orphan gh-pages #基于master分支创建一个没有父节点的分支，名字为gh-pages 
  git remote add origin git@github.com:username/project-name.git #添加远程仓库，另名为origin
  git clone git@github.com:username/project-name.git  #把远程仓库克隆到本了，生成文件夹project-name ,此时project-name中的远程分支另名为origin
@@ -41,6 +45,4 @@ exerpt: |-
 ```
 
 
-
-##今天就更新到这里，明天再更新一些命令
 
