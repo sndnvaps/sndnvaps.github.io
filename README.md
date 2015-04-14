@@ -1,2 +1,2 @@
-### <chchwy.github.io>
+### <blog.jimesyang.iego.net>
 Welcome to my personal blog :)
