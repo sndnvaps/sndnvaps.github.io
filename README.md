@@ -1,2 +1,3 @@
-### <blog.jimesyang.iego.net>
+###  blog.sndnvaps.com
+
 Welcome to my personal blog :)
