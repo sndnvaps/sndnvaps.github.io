@@ -24,7 +24,9 @@ Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Androi
 
 Miui Recovery是一个开源的Recovery Mod，我希望更多的开发者参与进来。让它能支持所有的手机。
 
-因为构架的问题，目前主要研究的方向是 [twrp][1] ,
+~~准备不再支持 [Miui Recovery][0]~~
+
+ 因为构架及CM官方对CWM的支持的问题，目前主要研究的方向是 [twrp][1]
 
  - [Miui Recovery][0]
 
