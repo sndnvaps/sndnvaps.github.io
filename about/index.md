@@ -15,6 +15,8 @@ Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Androi
 
 * [Github][3]
 * [Weibo][4]
+* [blog][5]
+* [this->blog][6]
 
 ## 开源项目
 
@@ -22,15 +24,19 @@ Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Androi
 
 Miui Recovery是一个开源的Recovery Mod，我希望更多的开发者参与进来。让它能支持所有的手机。
 
+因为构架的问题，目前主要研究的方向是 [twrp][1] ,
+
  - [Miui Recovery][0]
 
- - [twrp for xiaomi 2s][1] 
+ - [twrp for xiaomi][1] 
    
  - [CWM Recovery][2] 
 
 
 [0]: http://github.com/sndnvaps/miui_recovery "Miui Recovery"
-[1]: https://github.com/sndnvaps/android_bootable_recovery_twrp "Team-Win-Recovery-Project"
+[1]: https://github.com/sndnvaps/android_bootable_recovery_twrp "TWRP support tdb func"
 [2]: https://github.com/sndnvaps/xiaomi_ivan_cwm_recovery "ClockWorkMode Recovery"
 [3]: http://github.com/sndnvaps "开源项目主页"
 [4]: http://weibo.com/210124187 "我的个人微博"
+[5]: http://www.cnblogs.com/sn-dnv-aps/ "个人中文博客"
+[6]: https://blog.sndnvaps.com "托管在github pages的博客"
