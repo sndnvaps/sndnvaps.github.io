@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "CMakeLists.txt 中添加判断C++11的代码"
+title: "CMakeLists.txt 中添加判断编译器是否支持C++11的代码"
 tags: [CMakeLists.txt]
 tagline: "CMakeLists.txt"
-description: "CMakeLists.txt 中添加判断C++11的代码"
+description: "CMakeLists.txt 中添加判断编译器是否支持C++11的代码"
 exerpt: |- 
 
 ---
