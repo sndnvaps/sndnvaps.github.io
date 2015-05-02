@@ -4,7 +4,7 @@ url:              http://blog.sndnvaps.com/
 paginate:         10
 
 pygments:         false
-permalink:        /:year/:month/:title.html
+permalink:        /:year/:month/:day/:title.html
 markdown:         redcarpet
 rdiscount:
   extensions:     [smart]
