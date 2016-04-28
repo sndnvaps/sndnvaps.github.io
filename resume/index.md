@@ -1,6 +1,7 @@
 ﻿---
 title: CV
 layout: page
+comments: "yes"
 published: true
 ---
 
