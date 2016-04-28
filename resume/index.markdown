@@ -1,10 +1,10 @@
-
 ---
 title: Resume
 layout: page
 comments: "yes"
 published: true
 ---
+
 
 <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}" class="avatar" style="width: 100px; margin: 0 0 8px; border: solid 1px #ccc; float: right; padding: 5px;" />
 
