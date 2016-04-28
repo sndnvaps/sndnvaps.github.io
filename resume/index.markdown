@@ -11,7 +11,7 @@ published: true
 
 ## Who am i
 
-Hi，我是[laser杨万荣][4]，搞机爱好者，Linux爱好者,Android爱好者，現居江门。
+Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android爱好者，現居江门。
 
 
 
