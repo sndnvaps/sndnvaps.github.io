@@ -74,12 +74,9 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
 	2. C++
 	3. golang
 	4. bash shell
-	
-## 会编译的编译器
-	
-	1. gcc
-	2. g++
-	3. clang
+	5. Makefile
+	6. Dockerfile
+
 
 ## 会何种技能
 	
