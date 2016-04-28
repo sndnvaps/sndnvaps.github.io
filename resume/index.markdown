@@ -48,8 +48,8 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
  
  	
  <p> 
- 	主要研究的方向为Android Recovery和Kexec hardboot 
- 	基本上是能看到commit，就知道如何实现功能。
+ 	<br>主要研究的方向为Android Recovery和Kexec hardboot </br>
+ 	<br>基本上是能看到commit，就知道如何实现功能。</br>
  </p>
   
 	
