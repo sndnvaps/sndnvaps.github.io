@@ -1,5 +1,6 @@
-﻿---
-title: CV
+
+---
+title: Resume
 layout: page
 comments: "yes"
 published: true
