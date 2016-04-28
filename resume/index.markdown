@@ -21,7 +21,7 @@ Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Androi
 籍贯    	| 	广东省    		| 	婚姻状态		|	未婚					|
 政治面貌   	| 	团员   			| 	毕业院校		|						|
 学历    	|  	本科   			| 	专业			|	经济学					|
-联系电话    	| 	13211291577   	| 	电子邮箱		|	sndnvaps@sndnvaps.com	|
+联系电话    	| 	   	| 	电子邮箱		|	sndnvaps@sndnvaps.com	|
 外语语种  	| 	英语CET-4   		| 	计算机水平	|	二级C++,ps			|
 
 
