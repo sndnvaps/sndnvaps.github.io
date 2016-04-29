@@ -55,6 +55,17 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
 	
 
 
+## 工作经历
+
+
+时间	 	|	地点			| 职务		|	联系人			|
+----------------|-------------------------------|---------------|--------------------------------|
+2014.7~至今	|广东省江门市振业水产有限公司|	网络管理员&&业务员	| hr@zhenye-aquatic.com	|
+
+## 工作意向
+
+	系统配置管理员
+
 ## 何处可以找到我信息
  <li>
    <br><a href="http://github.com/sndnvaps">个人开源项目主页:Github</a></br>
@@ -64,18 +75,31 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
  </li>
 
 
-## 开源项目
+## 参与的开源项目
 
-	参加得有点多，不一一列举！
+ 1.<a href="http://github.com/sndnvaps/miui_recovery">Miui Recovery</a>
+ 
+ 2.<a href="https://github.com/sndnvaps/android_bootable_recovery_twrp">TWRP</a>
+ 
+ 3.<a href="https://github.com/astaxie/gopkg">gopkg</a>
+ 
+ 4.<a href="https://github.com/sndnvaps/php-telegram-bot">telegrambot project</a>
+ 
+ 5.<a href="https://github.com/akalongman/php-telegram-bot">telegrambot php api</a>
+ 
+ 6.<a href="https://github.com/sndnvaps/MyRasPi">Rpi temp record project</a>
+ 
+ 7.<a href="https://github.com/sndnvaps/QR_Encode_Decode">Gen QR pic && dec QR pic</a>
 	
 ## 会使用的编程语言
 	
-	1. C语言
+	1. C
 	2. C++
 	3. golang
 	4. bash shell
 	5. Makefile
 	6. Dockerfile
+	7. Android.mk
 
 
 ## 会何种技能
@@ -87,10 +111,13 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
 	4. 参与魔趣项目的twrp的开发与管理
 	5. 给CM,OmniRom等项目都提交过修改
 	6. 使用docker部署测试环境
+	7. 修改内核（主要是功能的移植）
+	8. 会使用git版本管理工具
+	9. 编译环境的管理与维护
+	10. 修正合并代码出现的问题（解决冲突，解决关系库依赖问题）
 	
 
 ## How to Contact me
 
-<a href="Mailto:sndnvaps@sndnvaps.com">Send me an 
-email</a>  
+<a href="Mailto:sndnvaps@sndnvaps.com">Send me an email</a>  
 	
