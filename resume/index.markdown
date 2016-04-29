@@ -28,29 +28,8 @@ Hi，我是<strong>杨万荣</strong>，搞机爱好者，Linux爱好者,Android
 
 ## 简介
 
-<p>
-   在大学期间初次接触电脑，为了解决日常生活中遇到的小问题，开始自学编程。在不断学习后，发现Windows环境测试过于不方便，为此转向用linux系统进行学习编程。在进一步接触后，发现要学习的东西非常多，为了满足自我的求知欲望，尝试学习C语言外的其它编程语言。
- </p>
- 
- <p>
-   在自学半年C语言+linux系统后，发现单纯的学习是没有用的，就开始接触一些简单的项目。最开始接触的项目为小米的
-   <a href="http://github.com/sndnvaps/miui_recovery">Miui Recovery</a>
-</p>
-
- <p>
-  在不断的深入学习后，开始学习一些简单的C++函数，为此，我对Miui Recovery的构架进行了一次重构，使用C++对功能模块进行重构。
-  在此后，再深入学习和理解 <a href="https://github.com/sndnvaps/android_bootable_recovery_twrp">TWRP</a>的功能的添加和完善，至少于把twrp适配到不同的编译平台当中。其中包含 <a href="https://github.com/MoKee">MoKee Open Source</a>
- </p>
- 
- <p>
- 	能处理编译安卓过程当中出现的问题，能指出错误的位置，错误的原因，及提供修改方法和意见。
- </p>
- 
- 	
- <p> 
- 	<br>主要研究的方向为Android Recovery和Kexec hardboot </br>
- 	<br>基本上是能看到commit，就知道如何实现功能。</br>
- </p>
+	一个入错行的程序员！
+	目前在公司负责的为维护公司网络安全，维护公司内监控的正常运转，参与业务部的日常工作。
   
 	
 
