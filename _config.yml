@@ -5,7 +5,7 @@ paginate:         10
 
 pygments:         false
 permalink:        /:year/:month/:day/:title.html
-markdown:         redcarpet
+markdown:         kramdown
 rdiscount:
   extensions:     [smart]
 
