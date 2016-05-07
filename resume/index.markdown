@@ -34,7 +34,7 @@ published: true
 
 
 时间	 	|	地点			| 职务		|	联系人			|
-----------------|-------------------------------|---------------|--------------------------------|
+|:---:|:---:|:---:|:---:|
 2014.7~至今	|广东省江门市振业水产有限公司|	网络管理员&&销售部业务员	| hr@zhenye-aquatic.com	|
 
 ## 工作意向
@@ -42,30 +42,25 @@ published: true
 	系统配置管理员
 
 ## 何处可以找到我信息
- <li>
-   <br><a href="http://github.com/sndnvaps">个人开源项目主页:Github</a></br>
-   <br><a href="http://www.cnblogs.com/sn-dnv-aps">个人中文博客:cnblogs</a></br>
-   <br><a href="https://blog.sndnvaps.com">托管在github pages的博客:github_pages</a></br>
-   <br><a href="http://weibo.com/210124187">平时谈论人生的平台:SinaWeibo</a></br>
- </li>
+|链接地址|说明信息|
+|:---:|:---:|
+|http://github.com/sndnvaps|个人开源项目主页|
+|http://www.cnblogs.com/sn-dnv-aps|个人中文博客|
+|https://blog.sndnvaps.com|本博客地址|
+|http://weibo.com/210124187|平时谈论人生的平台|
+
 
 
 ## 参与的开源项目
 
- 1.<a href="http://github.com/sndnvaps/miui_recovery">Miui Recovery</a>
- 
- 2.<a href="https://github.com/sndnvaps/android_bootable_recovery_twrp">TWRP</a>
- 
- 3.<a href="https://github.com/astaxie/gopkg">gopkg</a>
- 
- 4.<a href="https://github.com/sndnvaps/php-telegram-bot">telegrambot project</a>
- 
- 5.<a href="https://github.com/akalongman/php-telegram-bot">telegrambot php api</a>
- 
- 6.<a href="https://github.com/sndnvaps/MyRasPi">Rpi temp record project</a>
- 
- 7.<a href="https://github.com/sndnvaps/QR_Encode_Decode">Gen QR pic && dec QR pic</a>
-	
+|序号|链接地址|说明信息|
+|:---:|:---:|:---:|
+|0|http://github.com/sndnvaps/miui_recovery|MiUi Recovery|
+|1|https://github.com/sndnvaps/android_bootable_recovery_twrp|个人修改的TWRP项目 |
+|2|https://github.com/astaxie/gopkg|参与的go语言项目|
+|3|https://github.com/sndnvaps/MyRasPi|参与的树莓派项目|
+|4|https://github.com/sndnvaps/QR_Encode_Decode|自己用C#写的二维码解释工具|
+
 ## 会使用的编程语言
 	
 	1. C
