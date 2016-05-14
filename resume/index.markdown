@@ -89,4 +89,3 @@ published: true
 ## How to Contact me
 
 <a href="Mailto:sndnvaps@sndnvaps.com">Send me an email</a>  
-	
