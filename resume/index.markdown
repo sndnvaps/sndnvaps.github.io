@@ -34,7 +34,7 @@ published: true
 |时间|地点| 职务|联系人|
 |:---:|:---:|:---:|:---:|
 |2014.7~2016.09|广东省江门市振业水产有限公司|网络管理员&&单证部业务员| hr@zhenye-aquatic.com|
-|2016.09~|Unkown| admin@sndnvaps.com|
+|2016.09~|Unkown| Unkown |admin@sndnvaps.com|
 
 ## 工作意向
 
