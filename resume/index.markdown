@@ -44,10 +44,10 @@ published: true
 
 |序号|链接地址|说明信息|
 |:---:|:---:|:---:|
-|0|http://github.com/sndnvaps|个人开源项目主页|
-|1|http://www.cnblogs.com/sn-dnv-aps|个人中文博客|
-|2|https://blog.sndnvaps.com|本博客地址|
-|3|http://weibo.com/210124187|平时谈论人生的平台|
+|0|http://github.com/sndnvaps |个人开源项目主页|
+|1|http://www.cnblogs.com/sn-dnv-aps |个人中文博客|
+|2|https://blog.sndnvaps.com |本博客地址|
+|3|http://weibo.com/210124187 |平时谈论人生的平台|
 
 
 
@@ -55,12 +55,13 @@ published: true
 
 |序号|链接地址|说明信息|
 |:---:|:---:|:---:|
-|0|http://github.com/sndnvaps/miui_recovery|MiUi Recovery|
-|1|https://github.com/sndnvaps/android_bootable_recovery_twrp|个人修改的TWRP项目 |
-|2|https://github.com/astaxie/gopkg|参与的go语言项目|
-|3|https://github.com/sndnvaps/MyRasPi|参与的树莓派项目|
-|4|https://github.com/sndnvaps/QR_Encode_Decode|自己用C#写的二维码解释工具|
-|5|https://github.com/sndnvaps/Tesla_calculator|用go语言写的特斯拉线圈计算器|
+0| http://github.com/sndnvaps/miui_recovery | MiUi Recovery|
+1| https://github.com/sndnvaps/android_bootable_recovery_twrp | 个人修改的TWRP项目 |
+2| https://github.com/astaxie/gopkg | 参与的go语言项目|
+3| https://github.com/sndnvaps/MyRasPi | 参与的树莓派项目|
+4| https://github.com/sndnvaps/QR_Encode_Decode | 自己用C#写的二维码解释工具|
+5| https://github.com/sndnvaps/Tesla_calculator | 用go语言写的特斯拉线圈计算器|
+
 ## 会使用的编程语言
 	
 	1. C
