@@ -9,7 +9,7 @@ exerpt: |-
 
 直接上代码：
 
-```bas
+```vba
 Attribute VB_Name = "模块1"
 Option Explicit
 Public Sub AllInternalPasswords()
@@ -161,4 +161,4 @@ MsgBox ALLCLEAR & AUTHORS & VERSION & REPBACK, vbInformation, HEADER
 End Sub
 
 ```
-教程原文地址： http://jingyan.baidu.com/article/7f41ececf5704c593d095c90.html
+教程原文地址： [http://jingyan.baidu.com/article/7f41ececf5704c593d095c90.html](http://jingyan.baidu.com/article/7f41ececf5704c593d095c90.html)
