@@ -1,13 +1,13 @@
 ---
 layout: post 
 title: "Tesla Coil Calculator"
-tags: [TC]
+tags: [TeslaCoil]
 tagline: "TC, Tools"
 description: "Multi-Lang Support Tesla Coil Calculator"
 exerpt: |-
 ---
 
-This Project is base on https://github.com/visualfc/goqt, main purpose is make the calculate of Tesla Coil system more simpile.
+    This Project is base on [goqt](https://github.com/visualfc/goqt), main purpose is make the calculate of Tesla Coil system more simpile.
 
 
 # What it can do
@@ -20,11 +20,11 @@ This Project is base on https://github.com/visualfc/goqt, main purpose is make t
    6. Calculating Quality Coefficient of Tesla Coil
    7. MultiLang support (now support Chines & English)
 
- # Where i can got it 
+# Where i can got it
 
-  1. Just use you browser to visit [https://github.com/sndnvaps/tesla_calculator/releases](https://github.com/sndnvaps/tesla_calculator/releases)
-  2. Get the last release version
-  3. for Windows platform download *-win-86-en-US.zip, for Linux platform download *-en-US-x86_64.AppImage
+   1. Just use you browser to visit [https://github.com/sndnvaps/tesla_calculator/releases](https://github.com/sndnvaps/tesla_calculator/releases)
+   2. Get the last release version
+   3. for Windows platform download *-win-86-en-US.zip, for Linux platform download *-en-US-x86_64.AppImage
 
 # App show time
 
@@ -34,11 +34,11 @@ This Project is base on https://github.com/visualfc/goqt, main purpose is make t
 
 # Project site
 
-    [https://github.com/sndnvaps/tesla_calculator](https://github.com/sndnvaps/tesla_calculator)
+  [https://github.com/sndnvaps/tesla_calculator](https://github.com/sndnvaps/tesla_calculator)
 
 # Author
 
-   [https://github.com/sndnvaps](https://github.com/sndnvaps)
+   [sndnvaps](https://github.com/sndnvaps)
 
 # License
 
