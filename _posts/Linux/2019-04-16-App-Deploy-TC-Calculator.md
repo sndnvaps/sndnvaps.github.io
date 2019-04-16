@@ -7,7 +7,7 @@ description: "Multi-Lang Support Tesla Coil Calculator"
 exerpt: |-
 ---
 
-    This Project is base on [goqt](https://github.com/visualfc/goqt), main purpose is make the calculate of Tesla Coil system more simpile.
+This Project is base on [goqt](https://github.com/visualfc/goqt), main purpose is make the calculate of Tesla Coil system more simpile.
 
 
 # What it can do
