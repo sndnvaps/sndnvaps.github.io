@@ -9,9 +9,9 @@ published: true
 
 ## 我是誰
 
-Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Android爱好者，現居江门。欢迎来我的BLOG，这里记录我的思考，Linux的使用技巧,Android使用经验。
+Hi，我是dnv aps [杨万荣][4]，Linux爱好者,Gopher,Android爱好者，现居江门。欢迎来我的BLOG，这里记录我的思考。
 
-## 关注我
+Goditi i benefici del tempo, niente puo'essere permanente.（享受时间的恩惠吧，没有什么能永垂不朽。)
 
 * [Github][3]
 * [Weibo][4]
@@ -20,19 +20,17 @@ Hi，我是dnv aps [laser杨万荣][4]，搞机爱好者，Linux爱好者,Androi
 
 ## 开源项目
 
- - 我现在是开源软件[Miui Recovery][0]的主力开发者。Miui Recovery是一个第三方的 Android Recovery Mode，基于Aromafm源代码进行修改。功能比Clockwork Mod强大,能与twrp进行比拼。
+ - [sm.ms图床上传API接口][9]
 
-Miui Recovery是一个开源的Recovery Mod，我希望更多的开发者参与进来。让它能支持所有的手机。
+ - [C#版本 Phonedata手机号码查询API][8]
 
-~~准备不再支持 [Miui Recovery][0]~~
-
- 因为构架及CM官方对CWM的支持的问题，目前主要研究的方向是 [twrp][1]
+ - [特斯拉线圈计算软件][7]
 
  - [Miui Recovery][0]
 
- - [twrp for xiaomi][1] 
+ - [twrp for xiaomi][1]
    
- - [CWM Recovery][2] 
+ - [CWM Recovery][2]
 
 
 [0]: http://github.com/sndnvaps/miui_recovery "Miui Recovery"
@@ -42,3 +40,6 @@ Miui Recovery是一个开源的Recovery Mod，我希望更多的开发者参与�
 [4]: http://weibo.com/210124187 "我的个人微博"
 [5]: http://www.cnblogs.com/sn-dnv-aps/ "个人中文博客"
 [6]: https://blog.sndnvaps.com "托管在github pages的博客"
+[7]: https://github.com/sndnvaps/tesla_calculator "特斯拉线圈计算软件"
+[8]: https://github.com/sndnvaps/Phonedata "Phonedata手机号码查询API C#版本"
+[9]: https://github.com/sndnvaps/sm-ms-api "sm.ms图床上传API接口"
