@@ -26,6 +26,8 @@ Goditi i benefici del tempo, niente puo'essere permanente.（享受时间的恩�
 
  - [特斯拉线圈计算软件][7]
 
+ - [C#版本的二维码生成和解码工具][10]
+
  - [Miui Recovery][0]
 
  - [twrp for xiaomi][1]
@@ -43,3 +45,4 @@ Goditi i benefici del tempo, niente puo'essere permanente.（享受时间的恩�
 [7]: https://github.com/sndnvaps/tesla_calculator "特斯拉线圈计算软件"
 [8]: https://github.com/sndnvaps/Phonedata "Phonedata手机号码查询API C#版本"
 [9]: https://github.com/sndnvaps/sm-ms-api "sm.ms图床上传API接口"
+[10]: https://github.com/sndnvaps/QR_Encode_Decode "C#版本的二维码生成和解码工具"
